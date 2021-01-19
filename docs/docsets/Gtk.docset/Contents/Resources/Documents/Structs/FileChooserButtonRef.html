@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8963,7 +8963,7 @@ file.  It implements the <code>GtkFileChooser</code> interface.  Visually, it is
 file name with a button to bring up a <code>GtkFileChooserDialog</code>.
 The user can then use that dialog to change the file associated with
 that button.  This widget does not support setting the
-<code>GtkFileChooser:select</code>-multiple property to <code>true</code>.</p>
+<code>GtkFileChooser:select-multiple</code> property to <code>true</code>.</p>
 <h2 id='create-a-button-to-let-the-user-select-a-file-in-etc' class='heading'>Create a button to let the user select a file in /etc</h2>
 
 <p>(C Language Example):</p>
@@ -8980,21 +8980,19 @@ that button.  This widget does not support setting the
 <p>The <code>GtkFileChooserButton</code> supports the <code>GtkFileChooserActions</code>
 <code>GTK_FILE_CHOOSER_ACTION_OPEN</code> and <code>GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER</code>.</p>
 
-<blockquote>
-<p>The <code>GtkFileChooserButton</code> will ellipsize the label, and will thus
-request little horizontal space.  To give the button more space,
-you should call <code>gtk_widget_get_preferred_size()</code>,
-<code>gtk_file_chooser_button_set_width_chars()</code>, or pack the button in
-such a way that other interface elements give space to the
-widget.</p>
-</blockquote>
+<p>&gt; The <code>GtkFileChooserButton</code> will ellipsize the label, and will thus
+&gt; request little horizontal space.  To give the button more space,
+&gt; you should call <code>gtk_widget_get_preferred_size()</code>,
+&gt; <code>gtk_file_chooser_button_set_width_chars()</code>, or pack the button in
+&gt; such a way that other interface elements give space to the
+&gt; widget.</p>
 <h1 id='css-nodes' class='heading'>CSS nodes</h1>
 
 <p>GtkFileChooserButton has a CSS node with name “filechooserbutton”, containing
 a subnode for the internal button with name “button” and style class “.file”.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9548-L9552">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9572-L9576">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9031,7 +9029,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9551">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9575">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9075,7 +9073,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9556-L9558">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9580-L9582">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9106,7 +9104,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9561-L9563">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9585-L9587">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9137,7 +9135,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9566-L9569">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9590-L9593">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9168,7 +9166,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9572-L9575">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9596-L9599">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9199,7 +9197,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9578-L9581">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9602-L9605">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9230,7 +9228,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9584-L9587">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9608-L9611">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9261,7 +9259,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9590-L9592">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9614-L9616">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9292,7 +9290,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9595">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9619">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9324,7 +9322,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9599-L9601">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9623-L9625">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9356,7 +9354,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9605-L9607">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9629-L9631">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9388,7 +9386,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9611-L9613">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9635-L9637">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9420,7 +9418,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9617-L9619">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9641-L9643">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9452,7 +9450,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9623-L9625">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9647-L9649">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9483,7 +9481,7 @@ a subnode for the internal button with name “button” and style class “.fil
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9628-L9631">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9652-L9655">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9523,7 +9521,7 @@ order for the button to take over the file selected in the dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9643-L9646">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9667-L9670">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9563,7 +9561,7 @@ order for the button to take over the file selected in the dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9657-L9660">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L9681-L9684">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9576,7 +9574,7 @@ order for the button to take over the file selected in the dialog.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

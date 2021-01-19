@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8987,20 +8987,20 @@ these two models are sufficient.</p>
 <p>Models are accessed on a node/column level of granularity. One can
 query for the value of a model at a certain node and a certain
 column on that node. There are two structures used to reference a
-particular node in a model. They are the <code>GtkTreePath</code>-struct and
-the <code>GtkTreeIter</code>-struct (“iter” is short for iterator). Most of the
-interface consists of operations on a <code>GtkTreeIter</code>-struct.</p>
+particular node in a model. They are the <code>GtkTreePath-struct</code> and
+the <code>GtkTreeIter-struct</code> (“iter” is short for iterator). Most of the
+interface consists of operations on a <code>GtkTreeIter-struct</code>.</p>
 
 <p>A path is essentially a potential node. It is a location on a model
 that may or may not actually correspond to a node on a specific
-model. The <code>GtkTreePath</code>-struct can be converted into either an
+model. The <code>GtkTreePath-struct</code> can be converted into either an
 array of unsigned integers or a string. The string form is a list
 of numbers separated by a colon. Each number refers to the offset
 at that level. Thus, the path <code>0</code> refers to the root
 node and the path <code>2:4</code> refers to the fifth child of
 the third node.</p>
 
-<p>By contrast, a <code>GtkTreeIter</code>-struct is a reference to a specific node on
+<p>By contrast, a <code>GtkTreeIter-struct</code> is a reference to a specific node on
 a specific model. It is a generic struct with an integer and three
 generic pointers. These are filled in by the model in a model-specific
 way. One can convert a path to an iterator by calling
@@ -9036,7 +9036,7 @@ provided. The first example shows three ways of getting the iter at
 the location <code>3:2:5</code>. While the first method shown is
 easier, the second is much more common, as you often get paths from
 callbacks.</p>
-<h2 id='acquiring-a-code-gtktreeiter-code-struct' class='heading'>Acquiring a <code>GtkTreeIter</code>-struct</h2>
+<h2 id='acquiring-a-code-gtktreeiter-struct-code' class='heading'>Acquiring a <code>GtkTreeIter-struct</code></h2>
 
 <p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>// Three ways of getting the iter pointing to the location
@@ -9153,7 +9153,7 @@ is always referenced when any view is attached).</p></li>
 </ul>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L797-L804">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L801-L810">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9187,7 +9187,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L799">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L803">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9225,7 +9225,37 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L802">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L806">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk17TreeModelProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk17TreeModelProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>TreeModelProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L809">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9344,7 +9374,7 @@ is always referenced when any view is attached).</p></li>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1472-L1474">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1478-L1480">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9450,7 +9480,7 @@ is always referenced when any view is attached).</p></li>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1485-L1487">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1491-L1493">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9536,7 +9566,7 @@ by removing and then reinserting the row.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>a <code>GtkTreePath</code>-struct identifying the tree node whose children     have been reordered</p>
+                                  <p>a <code>GtkTreePath-struct</code> identifying the tree node whose children     have been reordered</p>
                                 </div>
                               </td>
                             </tr>
@@ -9548,7 +9578,7 @@ by removing and then reinserting the row.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>a valid <code>GtkTreeIter</code>-struct pointing to the node whose children     have been reordered, or <code>nil</code> if the depth of <code>path</code> is 0</p>
+                                  <p>a valid <code>GtkTreeIter-struct</code> pointing to the node whose children     have been reordered, or <code>nil</code> if the depth of <code>path</code> is 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -9580,7 +9610,7 @@ by removing and then reinserting the row.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1505">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1511">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9655,7 +9685,7 @@ by removing and then reinserting the row.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>a <code>GtkTreePath</code>-struct identifying the changed row</p>
+                                  <p>a <code>GtkTreePath-struct</code> identifying the changed row</p>
                                 </div>
                               </td>
                             </tr>
@@ -9667,7 +9697,7 @@ by removing and then reinserting the row.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>a valid <code>GtkTreeIter</code>-struct pointing to the changed row</p>
+                                  <p>a valid <code>GtkTreeIter-struct</code> pointing to the changed row</p>
                                 </div>
                               </td>
                             </tr>
@@ -9688,7 +9718,7 @@ Run the given callback whenever the <code>rowChanged</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1514-L1528">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1520-L1534">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9721,7 +9751,7 @@ Run the given callback whenever the <code>rowChanged</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1531">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1537">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9803,7 +9833,7 @@ the row previously was at. It may not be a valid location anymore.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>a <code>GtkTreePath</code>-struct identifying the row</p>
+                                  <p>a <code>GtkTreePath-struct</code> identifying the row</p>
                                 </div>
                               </td>
                             </tr>
@@ -9824,7 +9854,7 @@ Run the given callback whenever the <code>rowDeleted</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1547-L1561">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1553-L1567">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9857,7 +9887,7 @@ Run the given callback whenever the <code>rowDeleted</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1564">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1570">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9933,7 +9963,7 @@ row or lost its last child row.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>a <code>GtkTreePath</code>-struct identifying the row</p>
+                                  <p>a <code>GtkTreePath-struct</code> identifying the row</p>
                                 </div>
                               </td>
                             </tr>
@@ -9945,7 +9975,7 @@ row or lost its last child row.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>a valid <code>GtkTreeIter</code>-struct pointing to the row</p>
+                                  <p>a valid <code>GtkTreeIter-struct</code> pointing to the row</p>
                                 </div>
                               </td>
                             </tr>
@@ -9966,7 +9996,7 @@ Run the given callback whenever the <code>rowHasChildToggled</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1575-L1589">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1581-L1595">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9999,7 +10029,7 @@ Run the given callback whenever the <code>rowHasChildToggled</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1592">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1598">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10079,7 +10109,7 @@ then fill it with the desired values.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>a <code>GtkTreePath</code>-struct identifying the new row</p>
+                                  <p>a <code>GtkTreePath-struct</code> identifying the new row</p>
                                 </div>
                               </td>
                             </tr>
@@ -10091,7 +10121,7 @@ then fill it with the desired values.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>a valid <code>GtkTreeIter</code>-struct pointing to the new row</p>
+                                  <p>a valid <code>GtkTreeIter-struct</code> pointing to the new row</p>
                                 </div>
                               </td>
                             </tr>
@@ -10112,7 +10142,7 @@ Run the given callback whenever the <code>rowInserted</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1607-L1621">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1613-L1627">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10145,7 +10175,7 @@ Run the given callback whenever the <code>rowInserted</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1624">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1630">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10193,7 +10223,7 @@ and <code>root</code> as the virtual root.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1636-L1639">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1642-L1645">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10228,7 +10258,7 @@ and <code>root</code> as the virtual root.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1642-L1645">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1648-L1651">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10265,7 +10295,7 @@ and <code>gtk_tree_model_foreach()</code> returns.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1651-L1654">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1657-L1660">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10299,7 +10329,7 @@ and <code>gtk_tree_model_foreach()</code> returns.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1661-L1664">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1667-L1670">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10337,7 +10367,7 @@ of the <code>tree_model</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1671-L1674">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1677-L1680">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10372,7 +10402,7 @@ not exist, <code>iter</code> is set to an invalid iterator and <code>false</code
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1678-L1681">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1684-L1687">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10408,7 +10438,7 @@ not exist, <code>iter</code> is set to an invalid iterator and <code>false</code
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1686-L1689">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1692-L1695">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10443,7 +10473,7 @@ exists. Otherwise, <code>iter</code> is left invalid and <code>false</code> is r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1693-L1696">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1699-L1702">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10477,7 +10507,7 @@ exists. Otherwise, <code>iter</code> is left invalid and <code>false</code> is r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1699-L1702">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1705-L1708">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10498,7 +10528,7 @@ exists. Otherwise, <code>iter</code> is left invalid and <code>false</code> is r
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a newly-created <code>GtkTreePath</code>-struct referenced by <code>iter</code>.</p>
+                        <p>Returns a newly-created <code>GtkTreePath-struct</code> referenced by <code>iter</code>.</p>
 
 <p>This path should be freed with <code>gtk_tree_path_free()</code>.</p>
 
@@ -10513,7 +10543,7 @@ exists. Otherwise, <code>iter</code> is left invalid and <code>false</code> is r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1707-L1710">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1713-L1716">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10551,7 +10581,7 @@ return value for this string.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1717-L1720">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1723-L1726">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10586,7 +10616,7 @@ for language bindings to use.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1724-L1727">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1730-L1733">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10623,7 +10653,7 @@ to free any allocated memory.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1733-L1736">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1739-L1742">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10664,7 +10694,7 @@ function has been called.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1746-L1749">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1752-L1755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10698,7 +10728,7 @@ function has been called.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1752-L1755">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1758-L1761">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10735,7 +10765,7 @@ of toplevel nodes is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1761-L1764">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1767-L1770">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10772,7 +10802,7 @@ of toplevel nodes is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1769-L1772">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1775-L1778">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10809,7 +10839,7 @@ to be invalid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1778-L1781">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1784-L1787">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10835,7 +10865,7 @@ to be invalid.</p>
 <p>The first index is 0. If <code>n</code> is too big, or <code>parent</code> has no children,
 <code>iter</code> is set to an invalid iterator and <code>false</code> is returned. <code>parent</code>
 will remain a valid node after this function has been called. As a
-special case, if <code>parent</code> is <code>nil</code>, then the <code>n</code>-th root node
+special case, if <code>parent</code> is <code>nil</code>, then the <code>n-th</code> root node
 is set.</p>
 
                       </div>
@@ -10849,7 +10879,7 @@ is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1790-L1793">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1796-L1799">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10891,7 +10921,7 @@ and <code>iter</code> cannot point to the same memory location.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1804-L1807">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1810-L1813">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10928,7 +10958,7 @@ set to be invalid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1813-L1816">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1819-L1822">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10978,7 +11008,7 @@ of its reffed state.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1835-L1838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1841-L1844">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10999,7 +11029,7 @@ of its reffed state.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emits the <code>GtkTreeModel::row</code>-changed signal on <code>tree_model</code>.</p>
+                        <p>Emits the <code>GtkTreeModel::row-changed</code> signal on <code>tree_model</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -11012,7 +11042,7 @@ of its reffed state.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1841-L1844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1847-L1850">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11033,7 +11063,7 @@ of its reffed state.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emits the <code>GtkTreeModel::row</code>-deleted signal on <code>tree_model</code>.</p>
+                        <p>Emits the <code>GtkTreeModel::row-deleted</code> signal on <code>tree_model</code>.</p>
 
 <p>This should be called by models after a row has been removed.
 The location pointed to by <code>path</code> should be the location that
@@ -11053,7 +11083,7 @@ outstanding references on the deleted node should not be released.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1854-L1857">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1860-L1863">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11074,7 +11104,7 @@ outstanding references on the deleted node should not be released.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emits the <code>GtkTreeModel::row</code>-has-child-toggled signal on
+                        <p>Emits the <code>GtkTreeModel::row-has-child-toggled</code> signal on
 <code>tree_model</code>. This should be called by models after the child
 state of a node changes.</p>
 
@@ -11089,7 +11119,7 @@ state of a node changes.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1862-L1865">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1868-L1871">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11110,7 +11140,7 @@ state of a node changes.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emits the <code>GtkTreeModel::row</code>-inserted signal on <code>tree_model</code>.</p>
+                        <p>Emits the <code>GtkTreeModel::row-inserted</code> signal on <code>tree_model</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -11123,7 +11153,7 @@ state of a node changes.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1868-L1871">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1874-L1877">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11144,7 +11174,7 @@ state of a node changes.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emits the <code>GtkTreeModel::rows</code>-reordered signal on <code>tree_model</code>.</p>
+                        <p>Emits the <code>GtkTreeModel::rows-reordered</code> signal on <code>tree_model</code>.</p>
 
 <p>This should be called by models when their rows have been
 reordered.</p>
@@ -11160,7 +11190,7 @@ reordered.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1877-L1880">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1883-L1886">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11181,7 +11211,7 @@ reordered.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emits the <code>GtkTreeModel::rows</code>-reordered signal on <code>tree_model</code>.</p>
+                        <p>Emits the <code>GtkTreeModel::rows-reordered</code> signal on <code>tree_model</code>.</p>
 
 <p>This should be called by models when their rows have been
 reordered.</p>
@@ -11197,7 +11227,7 @@ reordered.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1886-L1889">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1892-L1895">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11218,7 +11248,7 @@ reordered.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emits the <code>GtkTreeModel::rows</code>-reordered signal on <code>tree_model</code>.</p>
+                        <p>Emits the <code>GtkTreeModel::rows-reordered</code> signal on <code>tree_model</code>.</p>
 
 <p>This should be called by models when their rows have been
 reordered.</p>
@@ -11234,7 +11264,7 @@ reordered.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1894-L1897">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1900-L1903">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11275,7 +11305,7 @@ this means, see <code>gtk_tree_model_ref_node()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1907-L1910">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1913-L1916">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11310,7 +11340,7 @@ in a drag_data_get handler.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1914-L1917">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1920-L1923">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11348,7 +11378,7 @@ of the <code>tree_model</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1923-L1933">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1929-L1939">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11382,7 +11412,7 @@ of the <code>tree_model</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1936-L1942">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TreeDragDest-TreeSortable.swift#L1942-L1948">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11395,7 +11425,7 @@ of the <code>tree_model</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

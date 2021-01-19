@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8959,11 +8959,11 @@ It exposes methods that can operate on this data type through <code><a href="../
 Use <code>UIManagerRef</code> only as an <code>unowned</code> reference to an existing <code>GtkUIManager</code> instance.</p>
 
 <blockquote>
-<p>GtkUIManager is deprecated since GTK+ 3.10. To construct user interfaces
-from XML definitions, you should use <code>GtkBuilder</code>, <code>GMenuModel</code>, et al. To
-work with actions, use <code>GAction</code>, <code>GtkActionable</code> et al. These newer classes
-support richer functionality and integration with various desktop shells.
-It should be possible to migrate most/all functionality from GtkUIManager.</p>
+<p>&gt; GtkUIManager is deprecated since GTK+ 3.10. To construct user interfaces
+&gt; from XML definitions, you should use <code>GtkBuilder</code>, <code>GMenuModel</code>, et al. To
+&gt; work with actions, use <code>GAction</code>, <code>GtkActionable</code> et al. These newer classes
+&gt; support richer functionality and integration with various desktop shells.
+&gt; It should be possible to migrate most/all functionality from GtkUIManager.</p>
 </blockquote>
 
 <p>A <code>GtkUIManager</code> constructs a user interface (menus and toolbars) from
@@ -8974,10 +8974,8 @@ action groups.</p>
 <p>The UI definitions are specified in an XML format which can be
 roughly described by the following DTD.</p>
 
-<blockquote>
-<p>Do not confuse the GtkUIManager UI Definitions described here with
-the similarly named <a href="#BUILDER-UI">GtkBuilder UI Definitions</a>.</p>
-</blockquote>
+<p>&gt; Do not confuse the GtkUIManager UI Definitions described here with
+&gt; the similarly named <a href="#BUILDER-UI">GtkBuilder UI Definitions</a>.</p>
 <pre class="highlight swift"><code><span class="o">&lt;!</span><span class="kt">ELEMENT</span> <span class="nf">menubar</span>     <span class="p">(</span><span class="n">menuitem</span><span class="o">|</span><span class="n">separator</span><span class="o">|</span><span class="n">placeholder</span><span class="o">|</span><span class="n">menu</span><span class="p">)</span><span class="o">*</span> <span class="o">&gt;</span>
 <span class="o">&lt;!</span><span class="kt">ELEMENT</span> <span class="nf">menu</span>        <span class="p">(</span><span class="n">menuitem</span><span class="o">|</span><span class="n">separator</span><span class="o">|</span><span class="n">placeholder</span><span class="o">|</span><span class="n">menu</span><span class="p">)</span><span class="o">*</span> <span class="o">&gt;</span>
 <span class="o">&lt;!</span><span class="kt">ELEMENT</span> <span class="nf">popup</span>       <span class="p">(</span><span class="n">menuitem</span><span class="o">|</span><span class="n">separator</span><span class="o">|</span><span class="n">placeholder</span><span class="o">|</span><span class="n">menu</span><span class="p">)</span><span class="o">*</span> <span class="o">&gt;</span>
@@ -9126,7 +9124,7 @@ toolitem with the same name has path
 
 <p>Every action has an accelerator path. Accelerators are installed together
 with menuitem proxies, but they can also be explicitly added with
-<accelerator> elements in the UI definition. This makes it possible to
+&lt;accelerator&gt; elements in the UI definition. This makes it possible to
 have accelerators for actions even if they have no visible proxies.</p>
 <h1 id='smart-separators-a-name-smart-separators-a' class='heading'>Smart Separators # <a name="Smart-Separators"></a></h1>
 
@@ -9157,10 +9155,10 @@ to which the submenu is associated.</p>
 <h1 id='gtkuimanager-as-gtkbuildable-a-name-gtkuimanager-builder-ui-a' class='heading'>GtkUIManager as GtkBuildable # <a name="GtkUIManager-BUILDER-UI"></a></h1>
 
 <p>The GtkUIManager implementation of the GtkBuildable interface accepts
-GtkActionGroup objects as <child> elements in UI definitions.</p>
+GtkActionGroup objects as &lt;child&gt; elements in UI definitions.</p>
 
 <p>A GtkUIManager UI definition as described above can be embedded in
-an GtkUIManager <object> element in a GtkBuilder UI definition.</p>
+an GtkUIManager &lt;object&gt; element in a GtkBuilder UI definition.</p>
 
 <p>The widgets that are constructed by a GtkUIManager can be embedded in
 other parts of the constructed user interface with the help of the
@@ -9191,7 +9189,7 @@ other parts of the constructed user interface with the help of the
 </code></pre>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39618-L39622">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39676-L39680">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9228,7 +9226,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39621">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39679">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9272,7 +9270,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39626-L39628">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39684-L39686">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9303,7 +9301,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39631-L39633">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39689-L39691">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9334,7 +9332,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39636-L39639">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39694-L39697">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9365,7 +9363,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39642-L39645">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39700-L39703">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9396,7 +9394,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39648-L39651">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39706-L39709">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9427,7 +9425,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39654-L39657">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39712-L39715">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9458,7 +9456,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39660-L39662">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39718-L39720">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9489,7 +9487,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39665">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39723">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9521,7 +9519,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39669-L39671">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39727-L39729">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9553,7 +9551,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39675-L39677">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39733-L39735">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9585,7 +9583,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39681-L39683">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39739-L39741">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9617,7 +9615,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39687-L39689">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39745-L39747">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9649,7 +9647,7 @@ other parts of the constructed user interface with the help of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39693-L39695">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39751-L39753">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9685,7 +9683,7 @@ This method is deprecated.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39702-L39705">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-TearoffMenuItem-UIManager.swift#L39760-L39763">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9698,7 +9696,7 @@ This method is deprecated.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

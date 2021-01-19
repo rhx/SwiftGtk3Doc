@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8972,11 +8972,11 @@ icon position for some other purpose.</p>
 <p>To make filtering appear more reactive, it is a good idea to
 not react to every change in the entry text immediately, but
 only after a short delay. To support this, <code>GtkSearchEntry</code>
-emits the <code>GtkSearchEntry::search</code>-changed signal which can
+emits the <code>GtkSearchEntry::search-changed</code> signal which can
 be used instead of the <code>GtkEditable::changed</code> signal.</p>
 
-<p>The <code>GtkSearchEntry::previous</code>-match, <code>GtkSearchEntry::next</code>-match
-and <code>GtkSearchEntry::stop</code>-search signals can be used to implement
+<p>The <code>GtkSearchEntry::previous-match</code>, <code>GtkSearchEntry::next-match</code>
+and <code>GtkSearchEntry::stop-search</code> signals can be used to implement
 moving between search results and ending the search.</p>
 
 <p>Often, GtkSearchEntry will be fed events by means of being
@@ -8984,7 +8984,7 @@ placed inside a <code>GtkSearchBar</code>. If that is not the case,
 you can use <code>gtk_search_entry_handle_event()</code> to pass events.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9033-L9167">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9049-L9183">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9042,7 +9042,7 @@ i.e., ownership is transferred to the <code>SearchEntry</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9038-L9040">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9054-L9056">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9094,7 +9094,7 @@ i.e., ownership is transferred to the <code>SearchEntry</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9046-L9048">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9062-L9064">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9147,7 +9147,7 @@ i.e., ownership is transferred to the <code>SearchEntry</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9055-L9058">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9071-L9074">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9200,7 +9200,7 @@ i.e., ownership is transferred to the <code>SearchEntry</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9065-L9068">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9081-L9084">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9252,7 +9252,7 @@ i.e., ownership is transferred to the <code>SearchEntry</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9074-L9077">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9090-L9093">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9304,7 +9304,7 @@ i.e., ownership is transferred to the <code>SearchEntry</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9083-L9086">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9099-L9102">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9356,7 +9356,7 @@ i.e., ownership is transferred to the <code>SearchEntry</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9092-L9094">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9108-L9110">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9407,7 +9407,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9099-L9101">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9115-L9117">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9458,7 +9458,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9106-L9108">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9122-L9124">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9509,7 +9509,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9113-L9115">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9129-L9131">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9560,7 +9560,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9120-L9122">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9136-L9138">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9592,7 +9592,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9126-L9128">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9142-L9144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9619,7 +9619,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -9643,7 +9643,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9133-L9135">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9149-L9151">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9670,7 +9670,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -9694,7 +9694,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9140-L9142">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9156-L9158">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9745,7 +9745,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9147-L9149">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9163-L9165">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9796,7 +9796,7 @@ Will retain <code>GtkSearchEntry</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9154-L9156">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9170-L9172">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9828,7 +9828,7 @@ empty, and a clear icon when it isn&rsquo;t.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9160-L9164">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L9176-L9180">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9841,7 +9841,7 @@ empty, and a clear icon when it isn&rsquo;t.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

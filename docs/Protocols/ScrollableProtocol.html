@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8972,21 +8972,21 @@ scrolling ability.</p>
 <li><p>When a parent widget sets the scrollable child widget’s adjustments,
 the widget should populate the adjustments’
 <code>GtkAdjustment:lower</code>, <code>GtkAdjustment:upper</code>,
-<code>GtkAdjustment:step</code>-increment, <code>GtkAdjustment:page</code>-increment and
-<code>GtkAdjustment:page</code>-size properties and connect to the
-<code>GtkAdjustment::value</code>-changed signal.</p></li>
+<code>GtkAdjustment:step-increment</code>, <code>GtkAdjustment:page-increment</code> and
+<code>GtkAdjustment:page-size</code> properties and connect to the
+<code>GtkAdjustment::value-changed</code> signal.</p></li>
 <li><p>Because its preferred size is the size for a fully expanded widget,
 the scrollable widget must be able to cope with underallocations.
 This means that it must accept any value passed to its
 <code>GtkWidgetClass.size_allocate</code><code>()</code> function.</p></li>
 <li><p>When the parent allocates space to the scrollable child widget,
 the widget should update the adjustments’ properties with new values.</p></li>
-<li><p>When any of the adjustments emits the <code>GtkAdjustment::value</code>-changed signal,
+<li><p>When any of the adjustments emits the <code>GtkAdjustment::value-changed</code> signal,
 the scrollable widget should scroll its contents.</p></li>
 </ul>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L52-L59">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L52-L61">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9059,6 +9059,36 @@ the scrollable widget should scroll its contents.</p></li>
                       </div>
                       <div class="slightly-smaller">
                         <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L57">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18ScrollableProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18ScrollableProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>ScrollableProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L60">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9189,7 +9219,7 @@ the scrollable widget should scroll its contents.</p></li>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L369-L393">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L371-L395">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9246,7 +9276,7 @@ the scrollable widget should scroll its contents.</p></li>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L398-L402">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L400-L404">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9304,7 +9334,7 @@ the scrollable widget should scroll its contents.</p></li>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L408-L410">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L410-L412">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9355,7 +9385,7 @@ at the right position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L440-L443">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L442-L445">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9389,7 +9419,7 @@ at the right position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L446-L449">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L448-L451">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9423,7 +9453,7 @@ at the right position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L452-L455">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L454-L457">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9457,7 +9487,7 @@ at the right position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L458-L461">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L460-L463">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9491,7 +9521,7 @@ at the right position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L464-L467">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L466-L469">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9525,7 +9555,7 @@ at the right position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L470-L473">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L472-L475">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9559,7 +9589,7 @@ at the right position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L475-L478">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L477-L480">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9595,7 +9625,7 @@ below the natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L483-L486">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L485-L488">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9629,7 +9659,7 @@ below the natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L489-L492">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L491-L494">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9663,7 +9693,7 @@ below the natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L494-L497">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L496-L499">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9699,7 +9729,7 @@ below the natural height.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L502-L505">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L504-L507">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9734,7 +9764,7 @@ shared between the scrollable widget and its parent.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L508-L518">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L510-L520">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9768,7 +9798,7 @@ shared between the scrollable widget and its parent.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L521-L533">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L523-L535">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9803,7 +9833,7 @@ between the scrollable widget and its parent.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L537-L547">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L539-L549">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9837,7 +9867,7 @@ between the scrollable widget and its parent.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L550-L562">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Scrollable-ToolShell.swift#L552-L564">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9850,7 +9880,7 @@ between the scrollable widget and its parent.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

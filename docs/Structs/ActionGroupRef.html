@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8974,22 +8974,22 @@ groups.</p>
 
 <p>Accelerators are handled by the GTK+ accelerator map. All actions are
 assigned an accelerator path (which normally has the form
-<code>&lt;Actions&gt;/group-name/action-name</code>) and a shortcut is associated with
+<code>&amp;lt;Actions&amp;gt;/group-name/action-name</code>) and a shortcut is associated with
 this accelerator path. All menuitems and toolitems take on this accelerator
 path. The GTK+ accelerator map code makes sure that the correct shortcut
 is displayed next to the menu item.</p>
 <h1 id='gtkactiongroup-as-gtkbuildable-a-name-gtkactiongroup-builder-ui-a' class='heading'>GtkActionGroup as GtkBuildable # <a name="GtkActionGroup-BUILDER-UI"></a></h1>
 
 <p>The <code>GtkActionGroup</code> implementation of the <code>GtkBuildable</code> interface accepts
-<code>GtkAction</code> objects as <child> elements in UI definitions.</p>
+<code>GtkAction</code> objects as &lt;child&gt; elements in UI definitions.</p>
 
 <p>Note that it is probably more common to define actions and action groups
 in the code, since they are directly related to what the code can do.</p>
 
 <p>The GtkActionGroup implementation of the GtkBuildable interface supports
-a custom <accelerator> element, which has attributes named “key“ and
+a custom &lt;accelerator&gt; element, which has attributes named “key“ and
 “modifiers“ and allows to specify accelerators. This is similar to the
-<accelerator> element of <code>GtkWidget</code>, the main difference is that
+&lt;accelerator&gt; element of <code>GtkWidget</code>, the main difference is that
 it doesn’t allow you to specify a signal.</p>
 <h2 id='a-code-gtkdialog-code-ui-definition-fragment' class='heading'>A <code>GtkDialog</code> UI definition fragment.</h2>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">object</span> <span class="kd">class</span><span class="o">=</span><span class="s">"GtkActionGroup"</span> <span class="n">id</span><span class="o">=</span><span class="s">"actiongroup"</span><span class="o">&gt;</span>
@@ -9005,7 +9005,7 @@ it doesn’t allow you to specify a signal.</p>
 </code></pre>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10355-L10359">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10371-L10375">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9042,7 +9042,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10358">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10374">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9086,7 +9086,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10363-L10365">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10379-L10381">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9117,7 +9117,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10368-L10370">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10384-L10386">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9148,7 +9148,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10373-L10376">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10389-L10392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9179,7 +9179,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10379-L10382">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10395-L10398">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9210,7 +9210,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10385-L10388">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10401-L10404">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9241,7 +9241,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10391-L10394">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10407-L10410">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9272,7 +9272,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10397-L10399">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10413-L10415">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9303,7 +9303,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10402">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10418">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9335,7 +9335,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10406-L10408">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10422-L10424">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9367,7 +9367,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10412-L10414">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10428-L10430">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9399,7 +9399,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10418-L10420">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10434-L10436">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9431,7 +9431,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10424-L10426">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10440-L10442">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9463,7 +9463,7 @@ it doesn’t allow you to specify a signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10430-L10432">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10446-L10448">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9502,7 +9502,7 @@ This method is deprecated.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10441-L10444">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L10457-L10460">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9515,7 +9515,7 @@ This method is deprecated.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

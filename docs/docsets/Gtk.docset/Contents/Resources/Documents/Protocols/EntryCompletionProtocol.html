@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8975,7 +8975,7 @@ with a custom match function (see <code>gtk_entry_completion_set_match_func()</c
 <p>When the user selects a completion, the content of the entry is
 updated. By default, the content of the entry is replaced by the
 text column of the model, but this can be overridden by connecting
-to the <code>GtkEntryCompletion::match</code>-selected signal and updating the
+to the <code>GtkEntryCompletion::match-selected</code> signal and updating the
 entry in the signal handler. Note that you should return <code>true</code> from
 the signal handler to suppress the default behaviour.</p>
 
@@ -8985,14 +8985,14 @@ the signal handler to suppress the default behaviour.</p>
 entry when they are selected, <code>GtkEntryCompletion</code> also allows to display
 “actions” in the popup window. Their appearance is similar to menuitems,
 to differentiate them clearly from completion strings. When an action is
-selected, the <code>GtkEntryCompletion::action</code>-activated signal is emitted.</p>
+selected, the <code>GtkEntryCompletion::action-activated</code> signal is emitted.</p>
 
 <p>GtkEntryCompletion uses a <code>GtkTreeModelFilter</code> model to represent the
 subset of the entire model that is currently matching. While the
-GtkEntryCompletion signals <code>GtkEntryCompletion::match</code>-selected and
-<code>GtkEntryCompletion::cursor</code>-on-match take the original model and an
+GtkEntryCompletion signals <code>GtkEntryCompletion::match-selected</code> and
+<code>GtkEntryCompletion::cursor-on-match</code> take the original model and an
 iter pointing to that model as arguments, other callbacks and signals
-(such as <code>GtkCellLayoutDataFuncs</code> or <code>GtkCellArea::apply</code>-attributes)
+(such as <code>GtkCellLayoutDataFuncs</code> or <code>GtkCellArea::apply-attributes</code>)
 will generally take the filter model as argument. As long as you are
 only calling <code>gtk_tree_model_get()</code>, this will make no difference to
 you. If for some reason, you need the original model, use
@@ -9001,7 +9001,7 @@ you. If for some reason, you need the original model, use
 matching iter.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1301-L1308">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1305-L1314">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9035,7 +9035,7 @@ matching iter.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1303">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1307">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9073,7 +9073,37 @@ matching iter.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1306">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1310">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk23EntryCompletionProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk23EntryCompletionProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>EntryCompletionProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1313">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9204,7 +9234,7 @@ matching iter.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1693-L1717">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1699-L1723">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9261,7 +9291,7 @@ matching iter.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1722-L1726">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1728-L1732">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9319,7 +9349,7 @@ matching iter.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1732-L1734">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1738-L1740">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9438,7 +9468,7 @@ matching iter.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1837-L1839">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1843-L1845">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9544,7 +9574,7 @@ matching iter.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1850-L1852">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1856-L1858">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9640,7 +9670,7 @@ Run the given callback whenever the <code>actionActivated</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1862-L1876">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1868-L1882">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9673,7 +9703,7 @@ Run the given callback whenever the <code>actionActivated</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1879">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1885">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9787,7 +9817,7 @@ Run the given callback whenever the <code>cursorOnMatch</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1895-L1909">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1901-L1915">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9820,7 +9850,7 @@ Run the given callback whenever the <code>cursorOnMatch</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1912">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1918">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9911,7 +9941,7 @@ Run the given callback whenever the <code>insertPrefix</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1928-L1942">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1934-L1948">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9944,7 +9974,7 @@ Run the given callback whenever the <code>insertPrefix</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1945">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1951">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10058,7 +10088,7 @@ Run the given callback whenever the <code>matchSelected</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1961-L1975">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1967-L1981">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10091,7 +10121,7 @@ Run the given callback whenever the <code>matchSelected</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1978">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1984">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10178,7 +10208,7 @@ Run the given callback whenever the <code>noMatches</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1989-L2003">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L1995-L2009">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10211,7 +10241,7 @@ Run the given callback whenever the <code>noMatches</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2006">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2012">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10330,7 +10360,7 @@ Run the given callback whenever the <code>notifyCellArea</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2038-L2052">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2044-L2058">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10363,7 +10393,7 @@ Run the given callback whenever the <code>notifyCellArea</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2055">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2061">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10482,7 +10512,7 @@ Run the given callback whenever the <code>notifyInlineCompletion</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2087-L2101">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2093-L2107">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10515,7 +10545,7 @@ Run the given callback whenever the <code>notifyInlineCompletion</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2104">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2110">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10634,7 +10664,7 @@ Run the given callback whenever the <code>notifyInlineSelection</code> signal is
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2136-L2150">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2142-L2156">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10667,7 +10697,7 @@ Run the given callback whenever the <code>notifyInlineSelection</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2153">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2159">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10786,7 +10816,7 @@ Run the given callback whenever the <code>notifyMinimumKeyLength</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2185-L2199">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2191-L2205">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10819,7 +10849,7 @@ Run the given callback whenever the <code>notifyMinimumKeyLength</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2202">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2208">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10938,7 +10968,7 @@ Run the given callback whenever the <code>notifyModel</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2234-L2248">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2240-L2254">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10971,7 +11001,7 @@ Run the given callback whenever the <code>notifyModel</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2251">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2257">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11090,7 +11120,7 @@ Run the given callback whenever the <code>notifyPopupCompletion</code> signal is
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2283-L2297">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2289-L2303">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11123,7 +11153,7 @@ Run the given callback whenever the <code>notifyPopupCompletion</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2300">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2306">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11242,7 +11272,7 @@ Run the given callback whenever the <code>notifyPopupSetWidth</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2332-L2346">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2338-L2352">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11275,7 +11305,7 @@ Run the given callback whenever the <code>notifyPopupSetWidth</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2349">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2355">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11394,7 +11424,7 @@ Run the given callback whenever the <code>notifyPopupSingleMatch</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2381-L2395">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2387-L2401">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11427,7 +11457,7 @@ Run the given callback whenever the <code>notifyPopupSingleMatch</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2398">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2404">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11546,7 +11576,7 @@ Run the given callback whenever the <code>notifyTextColumn</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2430-L2444">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2436-L2450">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11579,7 +11609,7 @@ Run the given callback whenever the <code>notifyTextColumn</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2447">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2453">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11628,7 +11658,7 @@ view will be updated accordingly.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2459-L2462">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2465-L2468">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11665,7 +11695,7 @@ see <code>gtk_entry_completion_set_text_column()</code> for details.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2468-L2471">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2474-L2477">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11702,7 +11732,7 @@ action may have changed since it was inserted.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2477-L2480">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2483-L2486">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11737,7 +11767,7 @@ the completion or <code>nil</code> if there’s no completion ongoing.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2484-L2487">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2490-L2493">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11771,7 +11801,7 @@ the completion or <code>nil</code> if there’s no completion ongoing.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2490-L2493">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2496-L2499">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11806,7 +11836,7 @@ be automatically inserted in the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2497-L2500">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2503-L2506">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11840,7 +11870,7 @@ be automatically inserted in the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2503-L2506">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2509-L2512">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11874,7 +11904,7 @@ be automatically inserted in the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2509-L2512">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2515-L2518">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11909,7 +11939,7 @@ Returns <code>nil</code> if the model is unset.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2516-L2519">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2522-L2525">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11943,7 +11973,7 @@ Returns <code>nil</code> if the model is unset.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2522-L2525">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2528-L2531">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11978,7 +12008,7 @@ width of the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2529-L2532">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2535-L2538">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12013,7 +12043,7 @@ only a single match.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2536-L2539">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2542-L2545">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12047,7 +12077,7 @@ only a single match.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2542-L2545">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2548-L2551">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12082,7 +12112,7 @@ with markup <code>markup</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2549-L2552">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2555-L2558">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12121,7 +12151,7 @@ the position of an action can change when deleting a different action.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2560-L2563">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2566-L2569">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12155,7 +12185,7 @@ the position of an action can change when deleting a different action.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2566-L2569">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2572-L2575">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12190,7 +12220,7 @@ be automatically inserted in the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2573-L2576">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2579-L2582">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12225,7 +12255,7 @@ inside the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2580-L2583">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2586-L2589">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12261,7 +12291,7 @@ list.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2588-L2591">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2594-L2597">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12298,7 +12328,7 @@ key takes a lot of time and will come up with meaningless results anyway
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2597-L2600">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2603-L2606">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12334,7 +12364,7 @@ If model is <code>nil</code>, then it will unset the model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2605-L2608">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2611-L2614">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12370,7 +12400,7 @@ If model is <code>nil</code>, then it will unset the model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2612-L2615">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2618-L2621">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12404,7 +12434,7 @@ If model is <code>nil</code>, then it will unset the model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2618-L2621">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2624-L2627">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12439,7 +12469,7 @@ width as the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2625-L2628">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2631-L2634">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12475,7 +12505,7 @@ are using <a href="#GtkEntryCompletion--inline-completion">inline completion</a>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2633-L2636">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2639-L2642">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12503,7 +12533,7 @@ and to get those strings from <code>column</code> in the model of <code>completi
 
 <p>This functions creates and adds a <code>GtkCellRendererText</code> for the selected
 column. If you need to set the text column, but don&rsquo;t want the cell
-renderer, use <code>g_object_set()</code> to set the <code>GtkEntryCompletion:text</code>-column
+renderer, use <code>g_object_set()</code> to set the <code>GtkEntryCompletion:text-column</code>
 property directly.</p>
 
                       </div>
@@ -12517,7 +12547,7 @@ property directly.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2647-L2650">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2653-L2656">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12552,7 +12582,7 @@ the completion or <code>nil</code> if there’s no completion ongoing.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2653-L2660">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2659-L2666">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12586,7 +12616,7 @@ the completion or <code>nil</code> if there’s no completion ongoing.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2663-L2669">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2669-L2675">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12621,7 +12651,7 @@ be automatically inserted in the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2673-L2685">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2679-L2691">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12655,7 +12685,7 @@ be automatically inserted in the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2688-L2699">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2694-L2705">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12689,7 +12719,7 @@ be automatically inserted in the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2702-L2715">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2708-L2721">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12723,7 +12753,7 @@ be automatically inserted in the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2717-L2730">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2723-L2736">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12757,7 +12787,7 @@ be automatically inserted in the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2733-L2743">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2739-L2749">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12792,7 +12822,7 @@ width of the entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2747-L2759">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2753-L2765">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12827,7 +12857,7 @@ only a single match.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2763-L2776">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2769-L2782">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12861,7 +12891,7 @@ only a single match.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2779-L2797">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2785-L2803">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12895,7 +12925,7 @@ only a single match.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2799-L2804">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-EntryAccessible-FileChooserButton.swift#L2805-L2810">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12908,7 +12938,7 @@ only a single match.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

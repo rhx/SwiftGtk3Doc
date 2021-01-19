@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -9155,7 +9155,7 @@ the layouting widget works. The layouting widget might decide to
 give every row its minimum or natural height or, if the model content
 is expected to fit inside the layouting widget without scrolling, it
 would make sense to calculate the allocation for each row at
-<code>GtkWidget::size</code>-allocate time using <code>gtk_distribute_natural_allocation()</code>.</p>
+<code>GtkWidget::size-allocate</code> time using <code>gtk_distribute_natural_allocation()</code>.</p>
 <h1 id='handling-events-and-driving-keyboard-focus' class='heading'>Handling Events and Driving Keyboard Focus</h1>
 
 <p>Passing events to the area is as simple as handling events on any
@@ -9163,8 +9163,8 @@ normal widget and then passing them to the <code>gtk_cell_area_event()</code>
 API as they come in. Usually <code>GtkCellArea</code> is only interested in
 button events, however some customized derived areas can be implemented
 who are interested in handling other events. Handling an event can
-trigger the <code>GtkCellArea::focus</code>-changed signal to fire; as well as
-<code>GtkCellArea::add</code>-editable in the case that an editable cell was
+trigger the <code>GtkCellArea::focus-changed</code> signal to fire; as well as
+<code>GtkCellArea::add-editable</code> in the case that an editable cell was
 clicked and needs to start editing. You can call
 <code>gtk_cell_area_stop_editing()</code> at any time to cancel any cell editing
 that is currently in progress.</p>
@@ -9269,7 +9269,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
 <code>gtk_cell_area_cell_get()</code> or <code>gtk_cell_area_cell_get_valist()</code>.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1143-L1147">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1147-L1151">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9306,7 +9306,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1146">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1150">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9350,7 +9350,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1151-L1153">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1155-L1157">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9381,7 +9381,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1156-L1158">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1160-L1162">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9412,7 +9412,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1161-L1164">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1165-L1168">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9443,7 +9443,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1167-L1170">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1171-L1174">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9474,7 +9474,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1173-L1176">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1177-L1180">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9505,7 +9505,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1179-L1182">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1183-L1186">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9536,7 +9536,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1185-L1187">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1189-L1191">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9567,7 +9567,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1190">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1194">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9599,7 +9599,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1194-L1196">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1198-L1200">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9631,7 +9631,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1200-L1202">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1204-L1206">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9663,7 +9663,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1206-L1208">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1210-L1212">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9695,7 +9695,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1212-L1214">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1216-L1218">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9727,7 +9727,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1218-L1220">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L1222-L1224">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9740,7 +9740,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

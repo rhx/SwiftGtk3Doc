@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8964,10 +8964,10 @@ parameters like page size and resolution. It also lets you easily
 create <code>PangoLayout</code> and <code>PangoContext</code> objects that match the font metrics
 of the cairo surface.</p>
 
-<p>GtkPrintContext objects gets passed to the <code>GtkPrintOperation::begin</code>-print,
-<code>GtkPrintOperation::end</code>-print, <code>GtkPrintOperation::request</code>-page-setup and
-<code>GtkPrintOperation::draw</code>-page signals on the <code>GtkPrintOperation</code>.</p>
-<h2 id='using-gtkprintcontext-in-a-code-gtkprintoperation-draw-code-page-callback' class='heading'>Using GtkPrintContext in a <code>GtkPrintOperation::draw</code>-page callback</h2>
+<p>GtkPrintContext objects gets passed to the <code>GtkPrintOperation::begin-print</code>,
+<code>GtkPrintOperation::end-print</code>, <code>GtkPrintOperation::request-page-setup</code> and
+<code>GtkPrintOperation::draw-page</code> signals on the <code>GtkPrintOperation</code>.</p>
+<h2 id='using-gtkprintcontext-in-a-code-gtkprintoperation-draw-page-code-callback' class='heading'>Using GtkPrintContext in a <code>GtkPrintOperation::draw-page</code> callback</h2>
 
 <p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>static void
@@ -9026,7 +9026,7 @@ draw_page (GtkPrintOperation *operation,
 <p>Printing support was added in GTK+ 2.10.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11044-L11171">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11062-L11189">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9084,7 +9084,7 @@ i.e., ownership is transferred to the <code>PrintContext</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11049-L11051">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11067-L11069">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9136,7 +9136,7 @@ i.e., ownership is transferred to the <code>PrintContext</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11057-L11059">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11075-L11077">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9189,7 +9189,7 @@ i.e., ownership is transferred to the <code>PrintContext</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11066-L11069">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11084-L11087">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9242,7 +9242,7 @@ i.e., ownership is transferred to the <code>PrintContext</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11076-L11079">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11094-L11097">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9294,7 +9294,7 @@ i.e., ownership is transferred to the <code>PrintContext</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11085-L11088">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11103-L11106">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9346,7 +9346,7 @@ i.e., ownership is transferred to the <code>PrintContext</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11094-L11097">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11112-L11115">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9398,7 +9398,7 @@ i.e., ownership is transferred to the <code>PrintContext</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11103-L11105">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11121-L11123">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9449,7 +9449,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11110-L11112">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11128-L11130">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9500,7 +9500,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11117-L11119">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11135-L11137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9551,7 +9551,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11124-L11126">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11142-L11144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9602,7 +9602,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11131-L11133">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11149-L11151">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9634,7 +9634,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11137-L11139">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11155-L11157">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9661,7 +9661,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -9685,7 +9685,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11144-L11146">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11162-L11164">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9712,7 +9712,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -9736,7 +9736,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11151-L11153">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11169-L11171">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9787,7 +9787,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11158-L11160">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11176-L11178">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9838,7 +9838,7 @@ Will retain <code>GtkPrintContext</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11165-L11167">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-PageSetup-RadioAction.swift#L11183-L11185">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9851,7 +9851,7 @@ Will retain <code>GtkPrintContext</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

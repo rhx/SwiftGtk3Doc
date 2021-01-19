@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8964,7 +8964,7 @@ To use it, you’ll probably want to investigate the methods on
 its base class, <code>GtkRange</code>, in addition to the methods for GtkScale itself.
 To set the value of a scale, you would normally use <code>gtk_range_set_value()</code>.
 To detect changes to the value, you would normally use the
-<code>GtkRange::value</code>-changed signal.</p>
+<code>GtkRange::value-changed</code> signal.</p>
 
 <p>Note that using the same upper and lower bounds for the <code>GtkScale</code> (through
 the <code>GtkRange</code> methods) will hide the slider itself. This is useful for
@@ -8972,8 +8972,8 @@ applications that want to show an undeterminate value on the scale, without
 changing the layout of the application (such as movie or music players).</p>
 <h1 id='gtkscale-as-gtkbuildable' class='heading'>GtkScale as GtkBuildable</h1>
 
-<p>GtkScale supports a custom <marks> element, which can contain multiple
-<mark> elements. The “value” and “position” attributes have the same
+<p>GtkScale supports a custom &lt;marks&gt; element, which can contain multiple
+&lt;mark&gt; elements. The “value” and “position” attributes have the same
 meaning as <code>gtk_scale_add_mark()</code> parameters of the same name. If the
 element is not empty, its content is taken as the markup to show at
 the mark. It can be translated with the usual ”translatable” and
@@ -9027,11 +9027,11 @@ subnode is the first.</p>
 <p>The main CSS node gets the &lsquo;marks-before&rsquo; and/or &lsquo;marks-after&rsquo; style classes
 added depending on what marks are present.</p>
 
-<p>If the scale is displaying the value (see <code>GtkScale:draw</code>-value), there is
+<p>If the scale is displaying the value (see <code>GtkScale:draw-value</code>), there is
 subnode with name value.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17209-L17216">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17241-L17250">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9065,7 +9065,7 @@ subnode with name value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17211">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17243">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9103,7 +9103,37 @@ subnode with name value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17214">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17246">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk13ScaleProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk13ScaleProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>ScaleProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17249">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9234,7 +9264,7 @@ subnode with name value.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17821-L17845">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17855-L17879">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9291,7 +9321,7 @@ subnode with name value.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17850-L17854">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17884-L17888">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9349,7 +9379,7 @@ subnode with name value.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17860-L17862">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L17894-L17896">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9468,7 +9498,7 @@ subnode with name value.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18642-L18644">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18676-L18678">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9574,7 +9604,7 @@ subnode with name value.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18655-L18657">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18689-L18691">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9687,7 +9717,7 @@ Run the given callback whenever the <code>formatValue</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18686-L18703">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18720-L18737">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9720,7 +9750,7 @@ Run the given callback whenever the <code>formatValue</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18706">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18740">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9839,7 +9869,7 @@ Run the given callback whenever the <code>notifyDigits</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18738-L18752">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18772-L18786">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9872,7 +9902,7 @@ Run the given callback whenever the <code>notifyDigits</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18755">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18789">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9991,7 +10021,7 @@ Run the given callback whenever the <code>notifyDrawValue</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18787-L18801">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18821-L18835">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10024,7 +10054,7 @@ Run the given callback whenever the <code>notifyDrawValue</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18804">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18838">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10143,7 +10173,7 @@ Run the given callback whenever the <code>notifyHasOrigin</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18836-L18850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18870-L18884">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10176,7 +10206,7 @@ Run the given callback whenever the <code>notifyHasOrigin</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18853">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18887">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10295,7 +10325,7 @@ Run the given callback whenever the <code>notifyValuePos</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18885-L18899">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18919-L18933">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10328,7 +10358,7 @@ Run the given callback whenever the <code>notifyValuePos</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18902">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18936">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10383,7 +10413,7 @@ marks value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18920-L18923">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18954-L18957">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10417,7 +10447,7 @@ marks value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18926-L18929">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18960-L18963">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10451,7 +10481,7 @@ marks value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18932-L18935">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18966-L18969">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10486,7 +10516,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18939-L18942">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18973-L18976">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10520,7 +10550,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18945-L18948">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18979-L18982">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10556,7 +10586,7 @@ the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18953-L18956">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18987-L18990">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10582,7 +10612,7 @@ the caller.</p>
 when using the <code>PangoLayout</code> function you need to convert to
 and from pixels using <code>PANGO_PIXELS()</code> or <code>PANGO_SCALE</code>.</p>
 
-<p>If the <code>GtkScale:draw</code>-value property is <code>false</code>, the return
+<p>If the <code>GtkScale:draw-value</code> property is <code>false</code>, the return
 values are undefined.</p>
 
                       </div>
@@ -10596,7 +10626,7 @@ values are undefined.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18965-L18968">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18999-L19002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10630,7 +10660,7 @@ values are undefined.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18971-L18974">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19005-L19008">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10653,13 +10683,13 @@ values are undefined.</p>
                       <div class="abstract">
                         <p>Sets the number of decimal places that are displayed in the value. Also
 causes the value of the adjustment to be rounded to this number of digits,
-so the retrieved value matches the displayed one, if <code>GtkScale:draw</code>-value is
+so the retrieved value matches the displayed one, if <code>GtkScale:draw-value</code> is
 <code>true</code> when the value changes. If you want to enforce rounding the value when
-<code>GtkScale:draw</code>-value is <code>false</code>, you can set <code>GtkRange:round</code>-digits instead.</p>
+<code>GtkScale:draw-value</code> is <code>false</code>, you can set <code>GtkRange:round-digits</code> instead.</p>
 
 <p>Note that rounding to a small number of digits can interfere with
 the smooth autoscrolling that is built into <code>GtkScale</code>. As an alternative,
-you can use the <code>GtkScale::format</code>-value signal to format the displayed
+you can use the <code>GtkScale::format-value</code> signal to format the displayed
 value yourself.</p>
 
                       </div>
@@ -10673,7 +10703,7 @@ value yourself.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18986-L18989">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19020-L19023">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10708,7 +10738,7 @@ to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L18993-L18996">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19027-L19030">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10729,7 +10759,7 @@ to the slider.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>If <code>GtkScale:has</code>-origin is set to <code>true</code> (the default), the scale will
+                        <p>If <code>GtkScale:has-origin</code> is set to <code>true</code> (the default), the scale will
 highlight the part of the trough between the origin (bottom or left side)
 and the current value.</p>
 
@@ -10744,7 +10774,7 @@ and the current value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19001-L19004">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19035-L19038">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10778,7 +10808,7 @@ and the current value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19007-L19010">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19041-L19044">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10812,7 +10842,7 @@ and the current value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19011-L19030">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19045-L19064">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10847,7 +10877,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19034-L19046">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19068-L19080">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10881,7 +10911,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19049-L19061">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19083-L19095">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10917,7 +10947,7 @@ the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19066-L19074">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19100-L19108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10951,7 +10981,7 @@ the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19077-L19087">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19111-L19121">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10985,7 +11015,7 @@ the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19089-L19094">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-RadioButton-Scale.swift#L19123-L19128">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10998,7 +11028,7 @@ the caller.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

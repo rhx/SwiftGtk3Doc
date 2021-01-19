@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8984,8 +8984,8 @@ visited.</p>
 <h1 id='gtklabel-as-gtkbuildable' class='heading'>GtkLabel as GtkBuildable</h1>
 
 <p>The GtkLabel implementation of the GtkBuildable interface supports a
-custom <attributes> element, which supports any number of <attribute>
-elements. The <attribute> element has attributes named “name“, “value“,
+custom &lt;attributes&gt; element, which supports any number of &lt;attribute&gt;
+elements. The &lt;attribute&gt; element has attributes named “name“, “value“,
 “start“ and “end“ and allows you to specify <code>PangoAttribute</code> values for
 this label.</p>
 
@@ -9093,7 +9093,7 @@ with one another. If you want to set how the label as a whole
 aligns in its available space, see the <code>GtkWidget:halign</code> and
 <code>GtkWidget:valign</code> properties.</p>
 
-<p>The <code>GtkLabel:width</code>-chars and <code>GtkLabel:max</code>-width-chars properties
+<p>The <code>GtkLabel:width-chars</code> and <code>GtkLabel:max-width-chars</code> properties
 can be used to control the size allocation of ellipsized or wrapped
 labels. For ellipsizing labels, if either is specified (and less
 than the actual text size), it is used as the minimum width, and the actual
@@ -9102,14 +9102,14 @@ width-chars is used as the minimum width, if specified, and max-width-chars
 is used as the natural width. Even if max-width-chars specified, wrapping
 labels will be rewrapped to use all of the available width.</p>
 
-<p>Note that the interpretation of <code>GtkLabel:width</code>-chars and
-<code>GtkLabel:max</code>-width-chars has changed a bit with the introduction of
+<p>Note that the interpretation of <code>GtkLabel:width-chars</code> and
+<code>GtkLabel:max-width-chars</code> has changed a bit with the introduction of
 <a href="#geometry-management">width-for-height geometry management.</a></p>
 <h1 id='links' class='heading'>Links</h1>
 
 <p>Since 2.18, GTK+ supports markup for clickable hyperlinks in addition
 to regular Pango markup. The markup for links is borrowed from HTML,
-using the <code>&lt;a&gt;</code> with “href“ and “title“ attributes. GTK+ renders links
+using the <code>&amp;lt;a&amp;gt;</code> with “href“ and “title“ attributes. GTK+ renders links
 similar to the way they appear in web browsers, with colored, underlined
 text. The “title“ attribute is displayed as a tooltip on the link.</p>
 
@@ -9125,10 +9125,10 @@ gtk_label_set_markup (GTK_LABEL (label), text);
 </code></pre>
 
 <p>It is possible to implement custom handling for links and their tooltips with
-the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_current_uri()</code> function.</p>
+the <code>GtkLabel::activate-link</code> signal and the <code>gtk_label_get_current_uri()</code> function.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15494-L15498">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15522-L15526">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9165,7 +9165,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15497">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15525">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9209,7 +9209,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15502-L15504">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15530-L15532">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9240,7 +9240,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15507-L15509">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15535-L15537">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9271,7 +9271,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15512-L15515">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15540-L15543">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9302,7 +9302,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15518-L15521">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15546-L15549">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9333,7 +9333,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15524-L15527">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15552-L15555">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9364,7 +9364,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15530-L15533">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15558-L15561">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9395,7 +9395,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15536-L15538">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15564-L15566">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9426,7 +9426,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15541">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15569">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9458,7 +9458,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15545-L15547">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15573-L15575">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9490,7 +9490,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15551-L15553">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15579-L15581">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9522,7 +9522,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15557-L15559">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15585-L15587">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9554,7 +9554,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15563-L15565">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15591-L15593">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9586,7 +9586,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15569-L15571">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15597-L15599">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9620,7 +9620,7 @@ the <code>GtkLabel::activate</code>-link signal and the <code>gtk_label_get_curr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15575-L15578">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15603-L15606">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9664,7 +9664,7 @@ and be activated by the mnemonic.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15594-L15597">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15622-L15625">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9708,7 +9708,7 @@ and be activated by the mnemonic.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15612-L15615">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-IMContextSimple-Label.swift#L15640-L15643">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9721,7 +9721,7 @@ and be activated by the mnemonic.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

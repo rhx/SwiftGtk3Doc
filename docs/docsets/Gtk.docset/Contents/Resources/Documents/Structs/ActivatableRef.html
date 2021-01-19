@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8965,11 +8965,11 @@ related actions.</p>
 <h1 id='implementing-gtkactivatable' class='heading'>Implementing GtkActivatable</h1>
 
 <p>When extending a class that is already <code>GtkActivatable</code>; it is only
-necessary to implement the <code>GtkActivatable</code><code>-&gt;sync_action_properties()</code>
-and <code>GtkActivatable</code><code>-&gt;update()</code> methods and chain up to the parent
+necessary to implement the <code>GtkActivatable-</code>&gt;<code>sync_action_properties()</code>
+and <code>GtkActivatable-</code>&gt;<code>update()</code> methods and chain up to the parent
 implementation, however when introducing
-a new <code>GtkActivatable</code> class; the <code>GtkActivatable:related</code>-action and
-<code>GtkActivatable:use</code>-action-appearance properties need to be handled by
+a new <code>GtkActivatable</code> class; the <code>GtkActivatable:related-action</code> and
+<code>GtkActivatable:use-action-appearance</code> properties need to be handled by
 the implementor. Handling these properties is mostly a matter of installing
 the action pointer and boolean flag on your instance, and calling
 <code>gtk_activatable_do_set_related_action()</code> and
@@ -9192,7 +9192,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
 </code></pre>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1853-L1857">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1857-L1861">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9229,7 +9229,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1856">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1860">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9273,7 +9273,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1861-L1863">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1865-L1867">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9304,7 +9304,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1866-L1868">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1870-L1872">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9335,7 +9335,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1871-L1874">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1875-L1878">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9366,7 +9366,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1877-L1880">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1881-L1884">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9397,7 +9397,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1883-L1886">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1887-L1890">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9428,7 +9428,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1889-L1892">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1893-L1896">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9459,7 +9459,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1895-L1897">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1899-L1901">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9491,7 +9491,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1901-L1903">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1905-L1907">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9523,7 +9523,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1907-L1909">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1911-L1913">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9555,7 +9555,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1913-L1915">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1917-L1919">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9587,7 +9587,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1919-L1921">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1923-L1925">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9619,7 +9619,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1925-L1927">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Actionable-Buildable.swift#L1929-L1931">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9632,7 +9632,7 @@ foo_bar_activatable_update (GtkActivatable       *activatable,
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

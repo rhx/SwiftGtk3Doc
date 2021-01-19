@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -9045,18 +9045,18 @@ quick_message (GtkWindow *parent, gchar *message)
 <code>vbox</code> and <code>action_area</code> as internal children with the names “vbox” and
 “action_area”.</p>
 
-<p>GtkDialog supports a custom <action-widgets> element, which can contain
-multiple <action-widget> elements. The “response” attribute specifies a
+<p>GtkDialog supports a custom &lt;action-widgets&gt; element, which can contain
+multiple &lt;action-widget&gt; elements. The “response” attribute specifies a
 numeric response, and the content of the element is the id of widget
 (which should be a child of the dialogs <code>action_area</code>). To mark a response
-as default, set the “default“ attribute of the <action-widget> element
+as default, set the “default“ attribute of the &lt;action-widget&gt; element
 to true.</p>
 
 <p>GtkDialog supports adding action widgets by specifying “action“ as
-the “type“ attribute of a <child> element. The widget will be added
+the “type“ attribute of a &lt;child&gt; element. The widget will be added
 either to the action area or the headerbar of the dialog, depending
 on the “use-header-bar“ property. The response id has to be associated
-with the action widget using the <action-widgets> element.</p>
+with the action widget using the &lt;action-widgets&gt; element.</p>
 
 <p>An example of a <code>GtkDialog</code> UI definition fragment:</p>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">object</span> <span class="kd">class</span><span class="o">=</span><span class="s">"GtkDialog"</span> <span class="n">id</span><span class="o">=</span><span class="s">"dialog1"</span><span class="o">&gt;</span>
@@ -9076,7 +9076,7 @@ with the action widget using the <action-widgets> element.</p>
 </code></pre>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36106-L36113">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36166-L36175">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9110,7 +9110,7 @@ with the action widget using the <action-widgets> element.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36108">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36168">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9148,7 +9148,37 @@ with the action widget using the <action-widgets> element.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36111">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36171">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk14DialogProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk14DialogProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>DialogProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36174">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9279,7 +9309,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36845-L36869">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36907-L36931">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9336,7 +9366,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36874-L36878">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36936-L36940">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9394,7 +9424,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36884-L36886">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L36946-L36948">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9513,7 +9543,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37737-L37739">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37799-L37801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9619,7 +9649,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37750-L37752">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37812-L37814">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9708,7 +9738,7 @@ Run the given callback whenever the <code>close</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37766-L37780">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37828-L37842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9741,7 +9771,7 @@ Run the given callback whenever the <code>close</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37783">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37845">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9840,7 +9870,7 @@ Run the given callback whenever the <code>response</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37795-L37809">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37857-L37871">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9873,7 +9903,7 @@ Run the given callback whenever the <code>response</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37812">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37874">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9992,7 +10022,7 @@ Run the given callback whenever the <code>notifyUseHeaderBar</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37844-L37858">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37906-L37920">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10025,7 +10055,7 @@ Run the given callback whenever the <code>notifyUseHeaderBar</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37861">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37923">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10077,7 +10107,7 @@ of the <code>GtkDialog</code> struct.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37876-L37879">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37938-L37941">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10115,7 +10145,7 @@ you don’t need it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37886-L37889">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37948-L37951">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10154,7 +10184,7 @@ Direct access to the action area
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37901-L37904">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37963-L37966">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10188,7 +10218,7 @@ Direct access to the action area
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37907-L37910">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37969-L37972">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10211,7 +10241,7 @@ Direct access to the action area
                       <div class="abstract">
                         <p>Returns the header bar of <code>dialog</code>. Note that the
 headerbar is only used by the dialog if the
-<code>GtkDialog:use</code>-header-bar property is <code>true</code>.</p>
+<code>GtkDialog:use-header-bar</code> property is <code>true</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -10224,7 +10254,7 @@ headerbar is only used by the dialog if the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37915-L37918">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37977-L37980">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10259,7 +10289,7 @@ of a dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37922-L37925">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37984-L37987">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10294,7 +10324,7 @@ of a dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37929-L37932">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37991-L37994">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10331,7 +10361,7 @@ typically either you or <code>gtk_dialog_run()</code> will be monitoring the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37938-L37941">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38000-L38003">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10362,7 +10392,7 @@ destroyed during the call to <code>gtk_dialog_run()</code>, <code>gtk_dialog_run
 <code>gtk_widget_show()</code> on the dialog for you. Note that you still
 need to show any children of the dialog yourself.</p>
 
-<p>During <code>gtk_dialog_run()</code>, the default behavior of <code>GtkWidget::delete</code>-event
+<p>During <code>gtk_dialog_run()</code>, the default behavior of <code>GtkWidget::delete-event</code>
 is disabled; if the dialog receives <code>delete_event</code>, it will not be
 destroyed as windows usually are, and <code>gtk_dialog_run()</code> will return
 <code>GTK_RESPONSE_DELETE_EVENT</code>. Also, during <code>gtk_dialog_run()</code> the dialog
@@ -10409,7 +10439,7 @@ be triggered during a <code>gtk_dialog_run()</code> call.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L37989-L37992">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38051-L38054">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10431,7 +10461,7 @@ be triggered during a <code>gtk_dialog_run()</code> call.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Sets an alternative button order. If the
-<code>GtkSettings:gtk</code>-alternative-button-order setting is set to <code>true</code>,
+<code>GtkSettings:gtk-alternative-button-order</code> setting is set to <code>true</code>,
 the dialog buttons are reordered according to the order of the
 response ids in <code>new_order</code>.</p>
 
@@ -10454,7 +10484,7 @@ Deprecated</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38010-L38013">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38072-L38075">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10490,7 +10520,7 @@ the default widget.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38018-L38021">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38080-L38083">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10526,7 +10556,7 @@ A convenient way to sensitize/desensitize dialog buttons.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38026-L38029">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38088-L38091">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10564,7 +10594,7 @@ Direct access to the action area
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38035-L38046">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38097-L38108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10598,7 +10628,7 @@ Direct access to the action area
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38049-L38055">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38111-L38117">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10621,7 +10651,7 @@ Direct access to the action area
                       <div class="abstract">
                         <p>Returns the header bar of <code>dialog</code>. Note that the
 headerbar is only used by the dialog if the
-<code>GtkDialog:use</code>-header-bar property is <code>true</code>.</p>
+<code>GtkDialog:use-header-bar</code> property is <code>true</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -10634,7 +10664,7 @@ headerbar is only used by the dialog if the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38060-L38068">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38122-L38130">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10668,7 +10698,7 @@ headerbar is only used by the dialog if the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38070-L38075">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-CellAccessible-Dialog.swift#L38132-L38137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10681,7 +10711,7 @@ headerbar is only used by the dialog if the
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8981,8 +8981,8 @@ can also activate these actions, if they implement the
 processing actions arriving from other processes and should therefore
 be held when activating actions locally (if GDK threads are enabled).</p>
 
-<p>The settings <code>GtkSettings:gtk</code>-shell-shows-app-menu and
-<code>GtkSettings:gtk</code>-shell-shows-menubar tell GTK+ whether the
+<p>The settings <code>GtkSettings:gtk-shell-shows-app-menu</code> and
+<code>GtkSettings:gtk-shell-shows-menubar</code> tell GTK+ whether the
 desktop environment is showing the application menu and menubar
 models outside the application as part of the desktop shell.
 For instance, on OS X, both menus will be displayed remotely;
@@ -8991,7 +8991,7 @@ will display the application menu, but not the menubar.</p>
 
 <p>If the desktop environment does not display the menubar, then
 <code>GtkApplicationWindow</code> will automatically show a <code>GtkMenuBar</code> for it.
-This behaviour can be overridden with the <code>GtkApplicationWindow:show</code>-menubar
+This behaviour can be overridden with the <code>GtkApplicationWindow:show-menubar</code>
 property. If the desktop environment does not display the application
 menu, then it will automatically be included in the menubar or in the
 windows client-side decorations.</p>
@@ -9025,15 +9025,15 @@ GtkWidget *window = gtk_application_window_new (app);
 <p><a href="https://git.gnome.org/browse/gtk+/tree/examples/sunny.c">A simple example</a></p>
 
 <p>The XML format understood by <code>GtkBuilder</code> for <code>GMenuModel</code> consists
-of a toplevel <code>&lt;menu&gt;</code> element, which contains one or more <code>&lt;item&gt;</code>
-elements. Each <code>&lt;item&gt;</code> element contains <code>&lt;attribute&gt;</code> and <code>&lt;link&gt;</code>
-elements with a mandatory name attribute. <code>&lt;link&gt;</code> elements have the
-same content model as <code>&lt;menu&gt;</code>. Instead of <code>&lt;link name=&quot;submenu&gt;</code> or
-<code>&lt;link name=&quot;section&quot;&gt;</code>, you can use <code>&lt;submenu&gt;</code> or <code>&lt;section&gt;</code>
+of a toplevel <code>&amp;lt;menu&amp;gt;</code> element, which contains one or more <code>&amp;lt;item&amp;gt;</code>
+elements. Each <code>&amp;lt;item&amp;gt;</code> element contains <code>&amp;lt;attribute&amp;gt;</code> and <code>&amp;lt;link&amp;gt;</code>
+elements with a mandatory name attribute. <code>&amp;lt;link&amp;gt;</code> elements have the
+same content model as <code>&amp;lt;menu&amp;gt;</code>. Instead of <code>&amp;lt;link name=&quot;submenu&amp;gt;</code> or
+<code>&amp;lt;link name=&quot;section&quot;&amp;gt;</code>, you can use <code>&amp;lt;submenu&amp;gt;</code> or <code>&amp;lt;section&amp;gt;</code>
 elements.</p>
 
 <p>Attribute values can be translated using gettext, like other <code>GtkBuilder</code>
-content. <code>&lt;attribute&gt;</code> elements can be marked for translation with a
+content. <code>&amp;lt;attribute&amp;gt;</code> elements can be marked for translation with a
 <code>translatable=&quot;yes&quot;</code> attribute. It is also possible to specify message
 context and translator comments, using the context and comments attributes.
 To make use of this, the <code>GtkBuilder</code> must have been given the gettext
@@ -9071,7 +9071,7 @@ include &ldquo;rtl&rdquo;, &ldquo;ltr&rdquo;, and &ldquo;none&rdquo;.</li>
 </ul>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L20861-L20868">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L20889-L20898">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9105,7 +9105,7 @@ include &ldquo;rtl&rdquo;, &ldquo;ltr&rdquo;, and &ldquo;none&rdquo;.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L20863">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L20891">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9143,7 +9143,37 @@ include &ldquo;rtl&rdquo;, &ldquo;ltr&rdquo;, and &ldquo;none&rdquo;.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L20866">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L20894">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk25ApplicationWindowProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk25ApplicationWindowProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>ApplicationWindowProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L20897">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9274,7 +9304,7 @@ include &ldquo;rtl&rdquo;, &ldquo;ltr&rdquo;, and &ldquo;none&rdquo;.</li>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L21552-L21576">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L21582-L21606">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9331,7 +9361,7 @@ include &ldquo;rtl&rdquo;, &ldquo;ltr&rdquo;, and &ldquo;none&rdquo;.</li>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L21581-L21585">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L21611-L21615">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9389,7 +9419,7 @@ include &ldquo;rtl&rdquo;, &ldquo;ltr&rdquo;, and &ldquo;none&rdquo;.</li>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L21591-L21593">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L21621-L21623">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9437,7 +9467,7 @@ a prior call to <code>gtk_application_window_set_help_overlay()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22432-L22435">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22462-L22465">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9472,7 +9502,7 @@ a <code>GtkApplication</code>, returns <code>0</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22439-L22442">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22469-L22472">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9507,7 +9537,7 @@ and menubar as needed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22446-L22449">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22476-L22479">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9545,7 +9575,7 @@ it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22456-L22459">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22486-L22489">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9583,7 +9613,7 @@ it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22465-L22468">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22495-L22498">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9618,7 +9648,7 @@ and menubar as needed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22472-L22475">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22502-L22505">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9653,7 +9683,7 @@ a prior call to <code>gtk_application_window_set_help_overlay()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22478-L22493">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22508-L22523">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9688,7 +9718,7 @@ a <code>GtkApplication</code>, returns <code>0</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22497-L22504">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22527-L22534">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9723,7 +9753,7 @@ and menubar as needed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22508-L22520">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22538-L22550">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9757,7 +9787,7 @@ and menubar as needed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22522-L22527">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L22552-L22557">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9770,7 +9800,7 @@ and menubar as needed.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

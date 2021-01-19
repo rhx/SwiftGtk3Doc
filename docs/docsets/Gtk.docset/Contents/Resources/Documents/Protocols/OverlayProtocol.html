@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8970,7 +8970,7 @@ horizontally centered. The position can be adjusted by setting the margin
 properties of the child to non-zero values.</p>
 
 <p>More complicated placement of overlays is possible by connecting
-to the <code>GtkOverlay::get</code>-child-position signal.</p>
+to the <code>GtkOverlay::get-child-position</code> signal.</p>
 
 <p>An overlay’s minimum and natural sizes are those of its main child. The sizes
 of overlay children are not considered when measuring these preferred sizes.</p>
@@ -8978,7 +8978,7 @@ of overlay children are not considered when measuring these preferred sizes.</p>
 
 <p>The GtkOverlay implementation of the GtkBuildable interface
 supports placing a child as an overlay by specifying “overlay” as
-the “type” attribute of a <code>&lt;child&gt;</code> element.</p>
+the “type” attribute of a <code>&amp;lt;child&amp;gt;</code> element.</p>
 <h1 id='css-nodes' class='heading'>CSS nodes</h1>
 
 <p>GtkOverlay has a single CSS node with the name “overlay”. Overlay children
@@ -8986,7 +8986,7 @@ whose alignments cause them to be positioned at an edge get the style classes
 “.left”, “.right”, “.top”, and/or “.bottom” according to their position.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L52-L59">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L52-L61">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9059,6 +9059,36 @@ whose alignments cause them to be positioned at an edge get the style classes
                       </div>
                       <div class="slightly-smaller">
                         <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L57">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk15OverlayProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk15OverlayProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>OverlayProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L60">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9189,7 +9219,7 @@ whose alignments cause them to be positioned at an edge get the style classes
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L497-L521">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L499-L523">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9246,7 +9276,7 @@ whose alignments cause them to be positioned at an edge get the style classes
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L526-L530">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L528-L532">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9304,7 +9334,7 @@ whose alignments cause them to be positioned at an edge get the style classes
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L536-L538">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L538-L540">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9423,7 +9453,7 @@ whose alignments cause them to be positioned at an edge get the style classes
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1276-L1278">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1278-L1280">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9529,7 +9559,7 @@ whose alignments cause them to be positioned at an edge get the style classes
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1289-L1291">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1291-L1293">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9550,7 +9580,7 @@ whose alignments cause them to be positioned at an edge get the style classes
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>get</code>-child-position signal is emitted to determine
+                        <p>The <code>get-child-position</code> signal is emitted to determine
 the position and size of any overlay child widgets. A
 handler for this signal should fill <code>allocation</code> with
 the desired position and size for <code>widget</code>, relative to
@@ -9654,7 +9684,7 @@ to its contents.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1315">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1317">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9707,7 +9737,7 @@ from its <code>GtkWidget:halign</code> and <code>GtkWidget:valign</code> propert
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1331-L1334">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1333-L1336">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9728,7 +9758,7 @@ from its <code>GtkWidget:halign</code> and <code>GtkWidget:valign</code> propert
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Convenience function to get the value of the <code>GtkOverlay:pass</code>-through
+                        <p>Convenience function to get the value of the <code>GtkOverlay:pass-through</code>
 child property for <code>widget</code>.</p>
 
                       </div>
@@ -9742,7 +9772,7 @@ child property for <code>widget</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1338-L1341">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1340-L1343">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9782,7 +9812,7 @@ the bottom. It also affects the default focus chain order.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1350-L1353">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1352-L1355">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9803,7 +9833,7 @@ the bottom. It also affects the default focus chain order.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Convenience function to set the value of the <code>GtkOverlay:pass</code>-through
+                        <p>Convenience function to set the value of the <code>GtkOverlay:pass-through</code>
 child property for <code>widget</code>.</p>
 
                       </div>
@@ -9817,7 +9847,7 @@ child property for <code>widget</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1357-L1360">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1359-L1362">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9851,7 +9881,7 @@ child property for <code>widget</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1362-L1367">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-Overlay-PadController.swift#L1364-L1369">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9864,7 +9894,7 @@ child property for <code>widget</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

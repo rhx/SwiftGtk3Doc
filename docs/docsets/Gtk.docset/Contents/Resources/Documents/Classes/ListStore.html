@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -9042,9 +9042,9 @@ run on older versions of GTK+, it is worth keeping the iter around.</p>
 are atomic, in the sense that the row is being appended to the store and the
 values filled in in a single operation with regard to <code>GtkTreeModel</code> signaling.
 In contrast, using e.g. <code>gtk_list_store_append()</code> and then <code>gtk_list_store_set()</code>
-will first create a row, which triggers the <code>GtkTreeModel::row</code>-inserted signal
+will first create a row, which triggers the <code>GtkTreeModel::row-inserted</code> signal
 on <code>GtkListStore</code>. The row, however, is still empty, and any signal handler
-connecting to <code>GtkTreeModel::row</code>-inserted on this particular store should be prepared
+connecting to <code>GtkTreeModel::row-inserted</code> on this particular store should be prepared
 for the situation that the row might be empty. This is especially important
 if you are wrapping the <code>GtkListStore</code> inside a <code>GtkTreeModelFilter</code> and are
 using a <code>GtkTreeModelFilterVisibleFunc</code>. Using any of the non-atomic operations
@@ -9054,14 +9054,14 @@ function must be prepared for that.</p>
 <h1 id='gtkliststore-as-gtkbuildable' class='heading'>GtkListStore as GtkBuildable</h1>
 
 <p>The GtkListStore implementation of the GtkBuildable interface allows
-to specify the model columns with a <columns> element that may contain
-multiple <column> elements, each specifying one model column. The “type”
+to specify the model columns with a &lt;columns&gt; element that may contain
+multiple &lt;column&gt; elements, each specifying one model column. The “type”
 attribute specifies the data type for the column.</p>
 
 <p>Additionally, it is possible to specify content for the list store
-in the UI definition, with the <data> element. It can contain multiple
-<row> elements, each specifying to content for one row of the list model.
-Inside a <row>, the <col> elements specify the content for individual cells.</p>
+in the UI definition, with the &lt;data&gt; element. It can contain multiple
+&lt;row&gt; elements, each specifying to content for one row of the list model.
+Inside a &lt;row&gt;, the &lt;col&gt; elements specify the content for individual cells.</p>
 
 <p>Note that it is probably more common to define your models in the code,
 and one might consider it a layering violation to specify the content of
@@ -9092,7 +9092,7 @@ is to separate the two, as far as possible.</p>
 </code></pre>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11397-L11540">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11419-L11562">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9150,7 +9150,7 @@ i.e., ownership is transferred to the <code>ListStore</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11402-L11404">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11424-L11426">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9202,7 +9202,7 @@ i.e., ownership is transferred to the <code>ListStore</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11410-L11412">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11432-L11434">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9255,7 +9255,7 @@ i.e., ownership is transferred to the <code>ListStore</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11419-L11422">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11441-L11444">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9308,7 +9308,7 @@ i.e., ownership is transferred to the <code>ListStore</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11429-L11432">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11451-L11454">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9360,7 +9360,7 @@ i.e., ownership is transferred to the <code>ListStore</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11438-L11441">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11460-L11463">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9412,7 +9412,7 @@ i.e., ownership is transferred to the <code>ListStore</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11447-L11450">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11469-L11472">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9464,7 +9464,7 @@ i.e., ownership is transferred to the <code>ListStore</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11456-L11458">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11478-L11480">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9515,7 +9515,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11463-L11465">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11485-L11487">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9566,7 +9566,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11470-L11472">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11492-L11494">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9617,7 +9617,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11477-L11479">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11499-L11501">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9668,7 +9668,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11484-L11486">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11506-L11508">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9700,7 +9700,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11490-L11492">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11512-L11514">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9727,7 +9727,7 @@ Will retain <code>GtkListStore</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -9751,7 +9751,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11497-L11499">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11519-L11521">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9778,7 +9778,7 @@ Will retain <code>GtkListStore</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -9802,7 +9802,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11504-L11506">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11526-L11528">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9853,7 +9853,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11511-L11513">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11533-L11535">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9904,7 +9904,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11518-L11520">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11540-L11542">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9935,7 +9935,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11527-L11531">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11549-L11553">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9966,7 +9966,7 @@ Will retain <code>GtkListStore</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11534-L11538">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-LabelAccessible-Menu.swift#L11556-L11560">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10332,7 +10332,7 @@ Will retain <code>GtkListStore</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -9154,7 +9154,7 @@ style properties and <code>gtk_widget_style_get_property()</code>, <code>gtk_wid
 <h1 id='gtkwidget-as-gtkbuildable' class='heading'>GtkWidget as GtkBuildable</h1>
 
 <p>The GtkWidget implementation of the GtkBuildable interface supports a
-custom <accelerator> element, which has attributes named ”key”, ”modifiers”
+custom &lt;accelerator&gt; element, which has attributes named ”key”, ”modifiers”
 and ”signal” and allows to specify accelerators.</p>
 
 <p>An example of a UI definition fragment specifying an accelerator:</p>
@@ -9163,7 +9163,7 @@ and ”signal” and allows to specify accelerators.</p>
 <span class="o">&lt;/</span><span class="n">object</span><span class="o">&gt;</span>
 </code></pre>
 
-<p>In addition to accelerators, GtkWidget also support a custom <accessible>
+<p>In addition to accelerators, GtkWidget also support a custom &lt;accessible&gt;
 element, which supports actions and relations. Properties on the accessible
 implementation of an object can be set by accessing the internal child
 “accessible” of a <code>GtkWidget</code>.</p>
@@ -9186,7 +9186,7 @@ implementation of an object can be set by accessing the internal child
 </code></pre>
 
 <p>Finally, GtkWidget allows style information such as style classes to
-be associated with widgets, using the custom <style> element:</p>
+be associated with widgets, using the custom &lt;style&gt; element:</p>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">object</span> <span class="kd">class</span><span class="o">=</span><span class="s">"GtkButton"</span> <span class="n">id</span><span class="o">=</span><span class="s">"button1"</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="kd">class</span> <span class="n">name</span><span class="o">=</span><span class="s">"my-special-button-class"</span><span class="o">/&gt;</span>
@@ -9208,24 +9208,24 @@ time using <code>gtk_widget_class_set_template()</code>.</p>
 is slightly different from regular <code>GtkBuilder</code> XML.</p>
 
 <p>Unlike regular interface descriptions, <code>gtk_widget_class_set_template()</code> will
-expect a <template> tag as a direct child of the toplevel <interface>
-tag. The <template> tag must specify the “class” attribute which must be
+expect a &lt;template&gt; tag as a direct child of the toplevel &lt;interface&gt;
+tag. The &lt;template&gt; tag must specify the “class” attribute which must be
 the type name of the widget. Optionally, the “parent” attribute may be
 specified to specify the direct parent type of the widget type, this is
 ignored by the GtkBuilder but required for Glade to introspect what kind
 of properties and internal children exist for a given type when the actual
 type does not exist.</p>
 
-<p>The XML which is contained inside the <template> tag behaves as if it were
-added to the <object> tag defining <code>widget</code> itself. You may set properties
-on <code>widget</code> by inserting <property> tags into the <template> tag, and also
-add <child> tags to add children and extend <code>widget</code> in the normal way you
-would with <object> tags.</p>
+<p>The XML which is contained inside the &lt;template&gt; tag behaves as if it were
+added to the &lt;object&gt; tag defining <code>widget</code> itself. You may set properties
+on <code>widget</code> by inserting &lt;property&gt; tags into the &lt;template&gt; tag, and also
+add &lt;child&gt; tags to add children and extend <code>widget</code> in the normal way you
+would with &lt;object&gt; tags.</p>
 
-<p>Additionally, <object> tags can also be added before and after the initial
-<template> tag in the normal way, allowing one to define auxiliary objects
+<p>Additionally, &lt;object&gt; tags can also be added before and after the initial
+&lt;template&gt; tag in the normal way, allowing one to define auxiliary objects
 which might be referenced by other widgets declared as children of the
-<template> tag.</p>
+&lt;template&gt; tag.</p>
 
 <p>An example of a GtkBuilder Template Definition:</p>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">interface</span><span class="o">&gt;</span>
@@ -9247,7 +9247,7 @@ which might be referenced by other widgets declared as children of the
 <span class="o">&lt;/</span><span class="n">interface</span><span class="o">&gt;</span>
 </code></pre>
 
-<p>Typically, you&#39;ll place the template fragment into a file that is
+<p>Typically, you&rsquo;ll place the template fragment into a file that is
 bundled with your project, using <code>GResource</code>. In order to load the
 template, you need to call <code>gtk_widget_class_set_template_from_resource()</code>
 from the class initialization of your <code>GtkWidget</code> type:</p>
@@ -9331,9 +9331,9 @@ foo_widget_class_init (FooWidgetClass *klass)
   gtk_widget_class_bind_template_callback (GTK_WIDGET_CLASS (klass), hello_button_clicked);
 }
 </code></pre>
- 
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11525-L11655">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11543-L11673">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9391,7 +9391,7 @@ i.e., ownership is transferred to the <code>Widget</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11530-L11532">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11548-L11550">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9443,7 +9443,7 @@ i.e., ownership is transferred to the <code>Widget</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11538-L11540">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11556-L11558">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9496,7 +9496,7 @@ i.e., ownership is transferred to the <code>Widget</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11547-L11550">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11565-L11568">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9549,7 +9549,7 @@ i.e., ownership is transferred to the <code>Widget</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11557-L11560">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11575-L11578">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9601,7 +9601,7 @@ i.e., ownership is transferred to the <code>Widget</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11566-L11569">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11584-L11587">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9653,7 +9653,7 @@ i.e., ownership is transferred to the <code>Widget</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11575-L11578">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11593-L11596">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9705,7 +9705,7 @@ i.e., ownership is transferred to the <code>Widget</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11584-L11586">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11602-L11604">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9756,7 +9756,7 @@ Will retain <code>GtkWidget</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11591-L11593">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11609-L11611">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9807,7 +9807,7 @@ Will retain <code>GtkWidget</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11598-L11600">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11616-L11618">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9858,7 +9858,7 @@ Will retain <code>GtkWidget</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11605-L11607">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11623-L11625">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9909,7 +9909,7 @@ Will retain <code>GtkWidget</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11612-L11614">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11630-L11632">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9941,7 +9941,7 @@ Will retain <code>GtkWidget</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11618-L11620">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11636-L11638">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9968,7 +9968,7 @@ Will retain <code>GtkWidget</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -9992,7 +9992,7 @@ Will retain <code>GtkWidget</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11625-L11627">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11643-L11645">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10019,7 +10019,7 @@ Will retain <code>GtkWidget</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -10043,7 +10043,7 @@ Will retain <code>GtkWidget</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11632-L11634">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11650-L11652">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10094,7 +10094,7 @@ Will retain <code>GtkWidget</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11639-L11641">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11657-L11659">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10145,7 +10145,7 @@ Will retain <code>GtkWidget</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11646-L11648">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-VBox-Widget.swift#L11664-L11666">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10158,7 +10158,7 @@ Will retain <code>GtkWidget</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -8959,9 +8959,9 @@ It exposes methods that can operate on this data type through <code><a href="../
 Use <code>ActionRef</code> only as an <code>unowned</code> reference to an existing <code>GtkAction</code> instance.</p>
 
 <blockquote>
-<p>In GTK+ 3.10, GtkAction has been deprecated. Use <code>GAction</code>
-instead, and associate actions with <code>GtkActionable</code> widgets. Use
-<code>GMenuModel</code> for creating menus with <code>gtk_menu_new_from_model()</code>.</p>
+<p>&gt; In GTK+ 3.10, GtkAction has been deprecated. Use <code>GAction</code>
+&gt; instead, and associate actions with <code>GtkActionable</code> widgets. Use
+&gt; <code>GMenuModel</code> for creating menus with <code>gtk_menu_new_from_model()</code>.</p>
 </blockquote>
 
 <p>Actions represent operations that the user can be perform, along with
@@ -8998,15 +8998,15 @@ subclasses.</p>
 widget needs to implement <code>GtkActivatable</code> interface. Proxies mirror the state
 of the action and should change when the action’s state changes. Properties
 that are always mirrored by proxies are <code>GtkAction:sensitive</code> and
-<code>GtkAction:visible</code>. <code>GtkAction:gicon</code>, <code>GtkAction:icon</code>-name, <code>GtkAction:label</code>,
-<code>GtkAction:short</code>-label and <code>GtkAction:stock</code>-id properties are only mirorred
-if proxy widget has <code>GtkActivatable:use</code>-action-appearance property set to
+<code>GtkAction:visible</code>. <code>GtkAction:gicon</code>, <code>GtkAction:icon-name</code>, <code>GtkAction:label</code>,
+<code>GtkAction:short-label</code> and <code>GtkAction:stock-id</code> properties are only mirorred
+if proxy widget has <code>GtkActivatable:use-action-appearance</code> property set to
 <code>true</code>.</p>
 
 <p>When the proxy is activated, it should activate its action.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6547-L6551">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6559-L6563">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9043,7 +9043,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6550">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6562">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9087,7 +9087,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6555-L6557">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6567-L6569">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9118,7 +9118,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6560-L6562">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6572-L6574">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9149,7 +9149,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6565-L6568">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6577-L6580">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9180,7 +9180,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6571-L6574">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6583-L6586">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9211,7 +9211,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6577-L6580">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6589-L6592">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9242,7 +9242,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6583-L6586">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6595-L6598">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9273,7 +9273,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6589-L6591">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6601-L6603">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9304,7 +9304,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6594">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6606">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9336,7 +9336,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6598-L6600">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6610-L6612">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9368,7 +9368,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6604-L6606">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6616-L6618">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9400,7 +9400,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6610-L6612">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6622-L6624">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9432,7 +9432,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6616-L6618">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6628-L6630">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9464,7 +9464,7 @@ if proxy widget has <code>GtkActivatable:use</code>-action-appearance property s
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6622-L6624">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6634-L6636">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9506,7 +9506,7 @@ Use #GAction instead, associating it to a widget with</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6636-L6639">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-AboutDialog-Bin.swift#L6648-L6651">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9519,7 +9519,7 @@ Use #GAction instead, associating it to a widget with</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

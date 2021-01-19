@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -9003,23 +9003,23 @@ GtkBuilder UI definitions.</p>
 
 <p><a href="https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/gtkbuilder.rnc">RELAX NG Compact Syntax</a></p>
 
-<p>The toplevel element is <interface>. It optionally takes a “domain”
+<p>The toplevel element is &lt;interface&gt;. It optionally takes a “domain”
 attribute, which will make the builder look for translated strings
 using <code>dgettext()</code> in the domain specified. This can also be done by
 calling <code>gtk_builder_set_translation_domain()</code> on the builder.
-Objects are described by <object> elements, which can contain
-<property> elements to set properties, <signal> elements which
-connect signals to handlers, and <child> elements, which describe
+Objects are described by &lt;object&gt; elements, which can contain
+&lt;property&gt; elements to set properties, &lt;signal&gt; elements which
+connect signals to handlers, and &lt;child&gt; elements, which describe
 child objects (most often widgets inside a container, but also e.g.
-actions in an action group, or columns in a tree model). A <child>
-element contains an <object> element which describes the child object.
-The target toolkit <code>version(s)</code> are described by <requires> elements,
+actions in an action group, or columns in a tree model). A &lt;child&gt;
+element contains an &lt;object&gt; element which describes the child object.
+The target toolkit <code>version(s)</code> are described by &lt;requires&gt; elements,
 the “lib” attribute specifies the widget library in question (currently
 the only supported value is “gtk+”) and the “version” attribute specifies
-the target version in the form “<major>.<minor>”. The builder will error
+the target version in the form “&lt;major&gt;.&lt;minor&gt;”. The builder will error
 out if the version requirements are not met.</p>
 
-<p>Typically, the specific kind of object represented by an <object>
+<p>Typically, the specific kind of object represented by an &lt;object&gt;
 element is specified by the “class” attribute. If the type has not
 been loaded yet, GTK+ tries to find the <code>get_type()</code> function from the
 class name by applying heuristics. This works in most cases, but if
@@ -9037,7 +9037,7 @@ parts of the UI definition. GTK+ reserves ids starting and ending
 with ___ (3 underscores) for its own purposes.</p>
 
 <p>Setting properties of objects is pretty straightforward with the
-<property> element: the “name” attribute specifies the name of the
+&lt;property&gt; element: the “name” attribute specifies the name of the
 property, and the content of the element specifies the value.
 If the “translatable” attribute is set to a true value, GTK+ uses
 <code>gettext()</code> (or <code>dgettext()</code> if the builder has a translation domain set)
@@ -9075,7 +9075,7 @@ property value using the attributes
 Internally builder implements this using GBinding objects.
 For more information see <code>g_object_bind_property()</code></p>
 
-<p>Signal handlers are set up with the <signal> element. The “name”
+<p>Signal handlers are set up with the &lt;signal&gt; element. The “name”
 attribute specifies the name of the signal, and the “handler” attribute
 specifies the function to connect to the signal. By default, GTK+ tries
 to find the handler using <code>g_module_symbol()</code>, but this can be changed by
@@ -9091,13 +9091,13 @@ builder.</p>
 been constructed by GTK+ as part of a composite widget, to set
 properties on them or to add further children (e.g. the <code>vbox</code> of
 a <code>GtkDialog</code>). This can be achieved by setting the “internal-child”
-property of the <child> element to a true value. Note that GtkBuilder
-still requires an <object> element for the internal child, even if it
+property of the &lt;child&gt; element to a true value. Note that GtkBuilder
+still requires an &lt;object&gt; element for the internal child, even if it
 has already been constructed.</p>
 
 <p>A number of widgets have different places where a child can be added
 (e.g. tabs vs. page content in notebooks). This can be reflected in
-a UI definition by specifying the “type” attribute on a <child>
+a UI definition by specifying the “type” attribute on a &lt;child&gt;
 The possible values for the “type” attribute are described in the
 sections describing the widget-specific portions of UI definitions.</p>
 <h1 id='a-gtkbuilder-ui-definition' class='heading'>A GtkBuilder UI Definition</h1>
@@ -9126,19 +9126,19 @@ sections describing the widget-specific portions of UI definitions.</p>
 
 <p>Beyond this general structure, several object classes define their
 own XML DTD fragments for filling in the ANY placeholders in the DTD
-above. Note that a custom element in a <child> element gets parsed by
+above. Note that a custom element in a &lt;child&gt; element gets parsed by
 the custom tag handler of the parent object, while a custom element in
-an <object> element gets parsed by the custom tag handler of the object.</p>
+an &lt;object&gt; element gets parsed by the custom tag handler of the object.</p>
 
 <p>These XML fragments are explained in the documentation of the
 respective objects.</p>
 
-<p>Additionally, since 3.10 a special <template> tag has been added
+<p>Additionally, since 3.10 a special &lt;template&gt; tag has been added
 to the format allowing one to define a widget class’s components.
 See the <a href="#composite-templates">GtkWidget documentation</a> for details.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2712-L2928">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2718-L2934">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9196,7 +9196,7 @@ i.e., ownership is transferred to the <code>Builder</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2717-L2719">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2723-L2725">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9248,7 +9248,7 @@ i.e., ownership is transferred to the <code>Builder</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2725-L2727">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2731-L2733">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9301,7 +9301,7 @@ i.e., ownership is transferred to the <code>Builder</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2734-L2737">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2740-L2743">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9354,7 +9354,7 @@ i.e., ownership is transferred to the <code>Builder</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2744-L2747">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2750-L2753">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9406,7 +9406,7 @@ i.e., ownership is transferred to the <code>Builder</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2753-L2756">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2759-L2762">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9458,7 +9458,7 @@ i.e., ownership is transferred to the <code>Builder</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2762-L2765">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2768-L2771">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9510,7 +9510,7 @@ i.e., ownership is transferred to the <code>Builder</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2771-L2773">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2777-L2779">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9561,7 +9561,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2778-L2780">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2784-L2786">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9612,7 +9612,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2785-L2787">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2791-L2793">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9663,7 +9663,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2792-L2794">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2798-L2800">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9714,7 +9714,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2799-L2801">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2805-L2807">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9746,7 +9746,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2805-L2807">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2811-L2813">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9773,7 +9773,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -9797,7 +9797,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2812-L2814">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2818-L2820">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9824,7 +9824,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -9848,7 +9848,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2819-L2821">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2825-L2827">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9899,7 +9899,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2826-L2828">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2832-L2834">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9950,7 +9950,7 @@ Will retain <code>GtkBuilder</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2833-L2835">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2839-L2841">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9989,7 +9989,7 @@ descriptions into a single builder.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2846-L2850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2852-L2856">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10025,7 +10025,7 @@ user interface descriptions that are shipped as part of your program.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2858-L2862">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2864-L2868">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10060,7 +10060,7 @@ description, then the program will be aborted.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2869-L2873">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2875-L2879">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10099,7 +10099,7 @@ from untrusted sources.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2884-L2888">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2890-L2894">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10135,7 +10135,7 @@ user interface descriptions that are shipped as part of your program.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2896-L2900">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2902-L2906">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10170,7 +10170,7 @@ description, then the program will be aborted.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2907-L2911">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2913-L2917">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10209,7 +10209,7 @@ from untrusted sources.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2922-L2926">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-BooleanCellAccessible-Calendar.swift#L2928-L2932">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10222,7 +10222,7 @@ from untrusted sources.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

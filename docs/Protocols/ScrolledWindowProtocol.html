@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -9008,16 +9008,16 @@ your own scrolling with <code>GtkScrollbar</code> and for example a <code>GtkGri
 <p>GtkScrolledWindow has built-in support for touch devices. When a
 touchscreen is used, swiping will move the scrolled window, and will
 expose &lsquo;kinetic&rsquo; behavior. This can be turned off with the
-<code>GtkScrolledWindow:kinetic</code>-scrolling property if it is undesired.</p>
+<code>GtkScrolledWindow:kinetic-scrolling</code> property if it is undesired.</p>
 
 <p>GtkScrolledWindow also displays visual &lsquo;overshoot&rsquo; indication when
 the content is pulled beyond the end, and this situation can be
-captured with the <code>GtkScrolledWindow::edge</code>-overshot signal.</p>
+captured with the <code>GtkScrolledWindow::edge-overshot</code> signal.</p>
 
 <p>If no mouse device is present, the scrollbars will overlayed as
 narrow, auto-hiding indicators over the content. If traditional
 scrollbars are desired although no mouse is present, this behaviour
-can be turned off with the <code>GtkScrolledWindow:overlay</code>-scrolling
+can be turned off with the <code>GtkScrolledWindow:overlay-scrolling</code>
 property.</p>
 <h1 id='css-nodes' class='heading'>CSS nodes</h1>
 
@@ -9036,7 +9036,7 @@ scrolling (.overlay-indicator, .dragging, .hovering) on its scrollbars.</p>
 with a subnode named junction.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4154-L4161">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4162-L4171">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -9070,7 +9070,7 @@ with a subnode named junction.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4156">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4164">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9108,7 +9108,37 @@ with a subnode named junction.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4159">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4167">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk22ScrolledWindowProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk22ScrolledWindowProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>ScrolledWindowProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4170">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9239,7 +9269,7 @@ with a subnode named junction.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4755-L4779">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4765-L4789">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9296,7 +9326,7 @@ with a subnode named junction.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4784-L4788">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4794-L4798">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9354,7 +9384,7 @@ with a subnode named junction.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4794-L4796">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L4804-L4806">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9473,7 +9503,7 @@ with a subnode named junction.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5598-L5600">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5608-L5610">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9579,7 +9609,7 @@ with a subnode named junction.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5611-L5613">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5621-L5623">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9600,12 +9630,12 @@ with a subnode named junction.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>edge</code>-overshot signal is emitted whenever user initiated scrolling
+                        <p>The <code>edge-overshot</code> signal is emitted whenever user initiated scrolling
 makes the scrolled window firmly surpass (i.e. with some edge resistance)
 the lower or upper limits defined by the adjustment in that orientation.</p>
 
 <p>A similar behavior without edge resistance is provided by the
-<code>GtkScrolledWindow::edge</code>-reached signal.</p>
+<code>GtkScrolledWindow::edge-reached</code> signal.</p>
 
 <p>Note: The <code>pos</code> argument is LTR/RTL aware, so callers should be aware too
 if intending to provide behavior on horizontal edges.</p>
@@ -9683,7 +9713,7 @@ Run the given callback whenever the <code>edgeOvershot</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5631-L5645">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5641-L5655">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9716,7 +9746,7 @@ Run the given callback whenever the <code>edgeOvershot</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5648">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5658">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9737,12 +9767,12 @@ Run the given callback whenever the <code>edgeOvershot</code> signal is emitted<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>edge</code>-reached signal is emitted whenever user-initiated scrolling
+                        <p>The <code>edge-reached</code> signal is emitted whenever user-initiated scrolling
 makes the scrolled window exactly reach the lower or upper limits
 defined by the adjustment in that orientation.</p>
 
 <p>A similar behavior with edge resistance is provided by the
-<code>GtkScrolledWindow::edge</code>-overshot signal.</p>
+<code>GtkScrolledWindow::edge-overshot</code> signal.</p>
 
 <p>Note: The <code>pos</code> argument is LTR/RTL aware, so callers should be aware too
 if intending to provide behavior on horizontal edges.</p>
@@ -9820,7 +9850,7 @@ Run the given callback whenever the <code>edgeReached</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5665-L5679">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5675-L5689">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9853,7 +9883,7 @@ Run the given callback whenever the <code>edgeReached</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5682">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5692">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9874,10 +9904,10 @@ Run the given callback whenever the <code>edgeReached</code> signal is emitted</
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>move</code>-focus-out signal is a
+                        <p>The <code>move-focus-out</code> signal is a
 <a href="#GtkBindingSignal">keybinding signal</a> which gets
 emitted when focus is moved away from the scrolled window by a
-keybinding. The <code>GtkWidget::move</code>-focus signal is emitted with
+keybinding. The <code>GtkWidget::move-focus</code> signal is emitted with
 <code>direction_type</code> on this scrolled window’s toplevel parent in the
 container hierarchy. The default bindings for this signal are
 <code>Ctrl + Tab</code> to move forward and <code>Ctrl + Shift + Tab</code> to move backward.</p>
@@ -9955,7 +9985,7 @@ Run the given callback whenever the <code>moveFocusOut</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5697-L5711">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5707-L5721">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9988,7 +10018,7 @@ Run the given callback whenever the <code>moveFocusOut</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5714">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5724">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10009,7 +10039,7 @@ Run the given callback whenever the <code>moveFocusOut</code> signal is emitted<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>scroll</code>-child signal is a
+                        <p>The <code>scroll-child</code> signal is a
 <a href="#GtkBindingSignal">keybinding signal</a>
 which gets emitted when a keybinding that scrolls is pressed.
 The horizontal or vertical adjustment is updated which triggers a
@@ -10100,7 +10130,7 @@ Run the given callback whenever the <code>scrollChild</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5728-L5742">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5738-L5752">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10133,7 +10163,7 @@ Run the given callback whenever the <code>scrollChild</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5745">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10252,7 +10282,7 @@ Run the given callback whenever the <code>notifyHadjustment</code> signal is emi
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5777-L5791">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5787-L5801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10285,7 +10315,7 @@ Run the given callback whenever the <code>notifyHadjustment</code> signal is emi
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5794">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5804">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10404,7 +10434,7 @@ Run the given callback whenever the <code>notifyHscrollbarPolicy</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5826-L5840">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5836-L5850">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10437,7 +10467,7 @@ Run the given callback whenever the <code>notifyHscrollbarPolicy</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5843">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5853">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10556,7 +10586,7 @@ Run the given callback whenever the <code>notifyKineticScrolling</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5875-L5889">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5885-L5899">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10589,7 +10619,7 @@ Run the given callback whenever the <code>notifyKineticScrolling</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5892">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5902">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10708,7 +10738,7 @@ Run the given callback whenever the <code>notifyMaxContentHeight</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5924-L5938">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5934-L5948">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10741,7 +10771,7 @@ Run the given callback whenever the <code>notifyMaxContentHeight</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5941">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5951">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10860,7 +10890,7 @@ Run the given callback whenever the <code>notifyMaxContentWidth</code> signal is
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5973-L5987">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5983-L5997">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10893,7 +10923,7 @@ Run the given callback whenever the <code>notifyMaxContentWidth</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L5990">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6000">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11012,7 +11042,7 @@ Run the given callback whenever the <code>notifyMinContentHeight</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6022-L6036">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6032-L6046">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11045,7 +11075,7 @@ Run the given callback whenever the <code>notifyMinContentHeight</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6039">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6049">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11164,7 +11194,7 @@ Run the given callback whenever the <code>notifyMinContentWidth</code> signal is
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6071-L6085">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6081-L6095">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11197,7 +11227,7 @@ Run the given callback whenever the <code>notifyMinContentWidth</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6088">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6098">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11316,7 +11346,7 @@ Run the given callback whenever the <code>notifyOverlayScrolling</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6120-L6134">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6130-L6144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11349,7 +11379,7 @@ Run the given callback whenever the <code>notifyOverlayScrolling</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6137">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6147">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11468,7 +11498,7 @@ Run the given callback whenever the <code>notifyPropagateNaturalHeight</code> si
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6169-L6183">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6179-L6193">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11501,7 +11531,7 @@ Run the given callback whenever the <code>notifyPropagateNaturalHeight</code> si
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6186">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6196">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11620,7 +11650,7 @@ Run the given callback whenever the <code>notifyPropagateNaturalWidth</code> sig
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6218-L6232">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6228-L6242">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11653,7 +11683,7 @@ Run the given callback whenever the <code>notifyPropagateNaturalWidth</code> sig
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6235">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6245">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11772,7 +11802,7 @@ Run the given callback whenever the <code>notifyShadowType</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6267-L6281">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6277-L6291">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11805,7 +11835,7 @@ Run the given callback whenever the <code>notifyShadowType</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6284">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6294">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11924,7 +11954,7 @@ Run the given callback whenever the <code>notifyVadjustment</code> signal is emi
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6316-L6330">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6326-L6340">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11957,7 +11987,7 @@ Run the given callback whenever the <code>notifyVadjustment</code> signal is emi
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6333">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6343">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12076,7 +12106,7 @@ Run the given callback whenever the <code>notifyVscrollbarPolicy</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6365-L6379">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6375-L6389">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12109,7 +12139,7 @@ Run the given callback whenever the <code>notifyVscrollbarPolicy</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6382">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12228,7 +12258,7 @@ Run the given callback whenever the <code>notifyWindowPlacement</code> signal is
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6414-L6428">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6424-L6438">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12261,7 +12291,7 @@ Run the given callback whenever the <code>notifyWindowPlacement</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6431">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6441">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12380,7 +12410,7 @@ Run the given callback whenever the <code>notifyWindowPlacementSet</code> signal
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6463-L6477">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6473-L6487">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12413,7 +12443,7 @@ Run the given callback whenever the <code>notifyWindowPlacementSet</code> signal
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6480">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6490">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12480,7 +12510,7 @@ a #GtkViewport if the child doesn’t implement #GtkScrollable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6510-L6513">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6520-L6523">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12515,7 +12545,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6517-L6520">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6527-L6530">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12551,7 +12581,7 @@ functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6525-L6528">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6535-L6538">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12585,7 +12615,7 @@ functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6531-L6534">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6541-L6544">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12619,7 +12649,7 @@ functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6537-L6540">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6547-L6550">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12653,7 +12683,7 @@ functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6543-L6546">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6553-L6556">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12687,7 +12717,7 @@ functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6549-L6552">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6559-L6562">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12721,7 +12751,7 @@ functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6555-L6558">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6565-L6568">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12755,7 +12785,7 @@ functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6561-L6564">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6571-L6574">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12789,7 +12819,7 @@ functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6567-L6570">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6577-L6580">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12824,7 +12854,7 @@ for the scrolled window. See <code>gtk_scrolled_window_set_placement()</code>.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6574-L6577">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6584-L6587">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12859,7 +12889,7 @@ scrollbars. See <code>gtk_scrolled_window_set_policy()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6581-L6584">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6591-L6594">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12894,7 +12924,7 @@ through the scrolled window’s requested natural height.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6588-L6591">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6598-L6601">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12929,7 +12959,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6595-L6598">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6605-L6608">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12964,7 +12994,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6602-L6605">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6612-L6615">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12999,7 +13029,7 @@ vertical scrollbar to the child widget’s vertical scroll functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6609-L6612">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6619-L6622">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13033,7 +13063,7 @@ vertical scrollbar to the child widget’s vertical scroll functionality.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6615-L6618">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6625-L6628">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13060,8 +13090,8 @@ is set to <code>true</code>, the event is captured by the scrolled window, and
 then later replayed if it is meant to go to the child widget.</p>
 
 <p>This should be enabled if any child widgets perform non-reversible
-actions on <code>GtkWidget::button</code>-press-event. If they don&rsquo;t, and handle
-additionally handle <code>GtkWidget::grab</code>-broken-event, it might be better
+actions on <code>GtkWidget::button-press-event</code>. If they don&rsquo;t, and handle
+additionally handle <code>GtkWidget::grab-broken-event</code>, it might be better
 to set <code>capture_button_press</code> to <code>false</code>.</p>
 
 <p>This setting only has an effect if kinetic scrolling is enabled.</p>
@@ -13077,7 +13107,7 @@ to set <code>capture_button_press</code> to <code>false</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6631-L6634">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6641-L6644">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13111,7 +13141,7 @@ to set <code>capture_button_press</code> to <code>false</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6637-L6640">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6647-L6650">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13145,7 +13175,7 @@ to set <code>capture_button_press</code> to <code>false</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6642-L6645">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6652-L6655">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13181,7 +13211,7 @@ Kinetic scrolling only applies to devices with source
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6650-L6653">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6660-L6663">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13207,7 +13237,7 @@ Kinetic scrolling only applies to devices with source
 the content.</p>
 
 <p>It is a programming error to set the maximum content height to a value
-smaller than <code>GtkScrolledWindow:min</code>-content-height.</p>
+smaller than <code>GtkScrolledWindow:min-content-height</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -13220,7 +13250,7 @@ smaller than <code>GtkScrolledWindow:min</code>-content-height.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6661-L6664">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6671-L6674">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13246,7 +13276,7 @@ smaller than <code>GtkScrolledWindow:min</code>-content-height.</p>
 the content.</p>
 
 <p>It is a programming error to set the maximum content width to a value
-smaller than <code>GtkScrolledWindow:min</code>-content-width.</p>
+smaller than <code>GtkScrolledWindow:min-content-width</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -13259,7 +13289,7 @@ smaller than <code>GtkScrolledWindow:min</code>-content-width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6672-L6675">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6682-L6685">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13285,7 +13315,7 @@ Note that this can and (usually will) be smaller than the minimum
 size of the content.</p>
 
 <p>It is a programming error to set the minimum content height to a
-value greater than <code>GtkScrolledWindow:max</code>-content-height.</p>
+value greater than <code>GtkScrolledWindow:max-content-height</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -13298,7 +13328,7 @@ value greater than <code>GtkScrolledWindow:max</code>-content-height.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6683-L6686">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6693-L6696">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13324,7 +13354,7 @@ Note that this can and (usually will) be smaller than the minimum
 size of the content.</p>
 
 <p>It is a programming error to set the minimum content width to a
-value greater than <code>GtkScrolledWindow:max</code>-content-width.</p>
+value greater than <code>GtkScrolledWindow:max-content-width</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -13337,7 +13367,7 @@ value greater than <code>GtkScrolledWindow:max</code>-content-width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6694-L6697">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6704-L6707">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13371,7 +13401,7 @@ value greater than <code>GtkScrolledWindow:max</code>-content-width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6700-L6703">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6710-L6713">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13414,7 +13444,7 @@ Other values in <code>GtkCornerType</code> are <code>GTK_CORNER_TOP_RIGHT</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6715-L6718">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6725-L6728">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13455,7 +13485,7 @@ than the trough — the display is larger than the page size).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6728-L6731">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6738-L6741">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13490,7 +13520,7 @@ through the scrolled window’s requested natural height.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6735-L6738">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6745-L6748">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13525,7 +13555,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6742-L6745">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6752-L6755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13560,7 +13590,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6749-L6752">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6759-L6762">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13594,7 +13624,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6755-L6758">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6765-L6768">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13628,7 +13658,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6760-L6763">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6770-L6773">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13667,7 +13697,7 @@ window, it defaults to <code>GTK_CORNER_TOP_LEFT</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6771-L6774">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6781-L6784">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13702,7 +13732,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6777-L6798">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6787-L6808">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13736,7 +13766,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6800-L6812">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6810-L6822">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13770,7 +13800,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6815-L6821">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6825-L6831">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13804,7 +13834,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6824-L6836">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6834-L6846">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13838,7 +13868,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6839-L6854">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6849-L6864">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13872,7 +13902,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6857-L6872">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6867-L6882">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13906,7 +13936,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6875-L6890">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6885-L6900">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13940,7 +13970,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6893-L6908">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6903-L6918">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13974,7 +14004,7 @@ scrolling. See <code>gtk_scrolled_window_set_capture_button_press()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6911-L6921">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6921-L6931">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -14009,7 +14039,7 @@ for the scrolled window. See <code>gtk_scrolled_window_set_placement()</code>.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6925-L6945">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6935-L6955">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -14044,7 +14074,7 @@ through the scrolled window’s requested natural height.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6949-L6961">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6959-L6971">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -14079,7 +14109,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6965-L6977">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6975-L6987">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -14114,7 +14144,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6981-L6993">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6991-L7003">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -14148,7 +14178,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L6995-L7006">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L7005-L7016">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -14182,7 +14212,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L7009-L7015">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L7019-L7025">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -14216,7 +14246,7 @@ through the scrolled window’s requested natural width.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L7017-L7022">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/generated/Sources/Gtk/Gtk-3.0-ScaleAccessible-Table.swift#L7027-L7032">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -14229,7 +14259,7 @@ through the scrolled window’s requested natural width.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

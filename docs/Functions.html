@@ -156,7 +156,7 @@
                 <a class="nav-group-task-link" href="Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Box.html">Box</a>
@@ -9229,7 +9229,7 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                       <div class="abstract">
                         <p>Converts an accelerator keyval and modifier mask into a string
 parseable by <code>gtk_accelerator_parse()</code>. For example, if you pass in
-<code>GDK_KEY_q</code> and <code>GDK_CONTROL_MASK</code>, this function returns “<Control>q”.</p>
+<code>GDK_KEY_q</code> and <code>GDK_CONTROL_MASK</code>, this function returns “&lt;Control&gt;q”.</p>
 
 <p>If you need to display accelerators in the user interface,
 see <code>gtk_accelerator_get_label()</code>.</p>
@@ -9334,14 +9334,14 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Parses a string representing an accelerator. The format looks like
-“<Control>a” or “<Shift><Alt>F1” or “<Release>z” (the last one is
+“&lt;Control&gt;a” or “&lt;Shift&gt;&lt;Alt&gt;F1” or “&lt;Release&gt;z” (the last one is
 for key release).</p>
 
 <p>The parser is fairly liberal and allows lower or upper case, and also
-abbreviations such as “<Ctl>” and “<Ctrl>”. Key names are parsed using
+abbreviations such as “&lt;Ctl&gt;” and “&lt;Ctrl&gt;”. Key names are parsed using
 <code>gdk_keyval_from_name()</code>. For character keys the name is not the symbol,
-but the lowercase name, e.g. one would use “<Ctrl>minus” instead of
-“<Ctrl>-”.</p>
+but the lowercase name, e.g. one would use “&lt;Ctrl&gt;minus” instead of
+“&lt;Ctrl&gt;-”.</p>
 
 <p>If the parse fails, <code>accelerator_key</code> and <code>accelerator_mods</code> will
 be set to 0 (zero).</p>
@@ -9501,7 +9501,7 @@ button order on the screen <code>screen</code>. See
 about alternative button order.</p>
 
 <p>If you need to use this function, you should probably connect
-to the <code>notify:gtk</code>-alternative-button-order signal on the
+to the <code>notify:gtk-alternative-button-order</code> signal on the
 <code>GtkSettings</code> object associated to <code>screen</code>, in order to be
 notified if the button order setting changes.</p>
 
@@ -9544,7 +9544,7 @@ button order on the screen <code>screen</code>. See
 about alternative button order.</p>
 
 <p>If you need to use this function, you should probably connect
-to the <code>notify:gtk</code>-alternative-button-order signal on the
+to the <code>notify:gtk-alternative-button-order</code> signal on the
 <code>GtkSettings</code> object associated to <code>screen</code>, in order to be
 notified if the button order setting changes.</p>
 
@@ -9958,8 +9958,8 @@ use “else if” statements to check which window should be drawn.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Transforms the given cairo context <code>cr</code> that from <code>widget</code>-relative
-coordinates to <code>window</code>-relative coordinates.
+                        <p>Transforms the given cairo context <code>cr</code> that from <code>widget-relative</code>
+coordinates to <code>window-relative</code> coordinates.
 If the <code>widget</code>’s window is not an ancestor of <code>window</code>, no
 modification will be applied.</p>
 
@@ -16946,7 +16946,7 @@ in from the current process. The returned path must be freed with
                       <div class="abstract">
                         <p>Lets a set of row reference created by
 <code>gtk_tree_row_reference_new_proxy()</code> know that the
-model emitted the <code>GtkTreeModel::row</code>-deleted signal.</p>
+model emitted the <code>GtkTreeModel::row-deleted</code> signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -16979,7 +16979,7 @@ model emitted the <code>GtkTreeModel::row</code>-deleted signal.</p>
                       <div class="abstract">
                         <p>Lets a set of row reference created by
 <code>gtk_tree_row_reference_new_proxy()</code> know that the
-model emitted the <code>GtkTreeModel::row</code>-inserted signal.</p>
+model emitted the <code>GtkTreeModel::row-inserted</code> signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -17012,7 +17012,7 @@ model emitted the <code>GtkTreeModel::row</code>-inserted signal.</p>
                       <div class="abstract">
                         <p>Lets a set of row reference created by
 <code>gtk_tree_row_reference_new_proxy()</code> know that the
-model emitted the <code>GtkTreeModel::rows</code>-reordered signal.</p>
+model emitted the <code>GtkTreeModel::rows-reordered</code> signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -17214,7 +17214,7 @@ main (int argc, char **argv)
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
